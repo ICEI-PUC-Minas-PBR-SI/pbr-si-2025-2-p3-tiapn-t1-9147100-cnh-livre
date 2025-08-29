@@ -1,10 +1,10 @@
 # CNH LIVRE
 
-`CURSO`
+`Sistemas de Informações`
 
-`DISCIPLINA`
+`Trabalho Interdisciplinar: Aplicações para Processos de Negócios `
 
-`SEMESTRE`
+`3`
 
 O presente relatório tem como objetivo apresentar o CNH Livre, um sistema digital inovador
 voltado à modernização do processo de formação de condutores no Brasil. A plataforma foi
