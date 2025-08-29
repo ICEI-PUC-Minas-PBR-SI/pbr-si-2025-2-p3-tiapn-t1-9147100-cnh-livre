@@ -1,46 +1,59 @@
-# Introdução
+Grupo 7 – Relatório CNH Livre
+1. Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+O presente projeto tem como objetivo analisar e apresentar soluções para a modernização do processo de formação de condutores no Brasil. O contexto envolve uma realidade em que o acesso à habilitação ainda é burocrático, caro e pouco acessível para grande parte da população. Muitos candidatos enfrentam dificuldades para encontrar instrutores confiáveis, organizar seus horários e compreender os processos legais e financeiros envolvidos.
 
-## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
+O projeto busca, portanto, estudar e propor meios digitais que promovam maior praticidade, transparência e inclusão nesse processo, considerando a crescente digitalização de serviços em setores como educação, transporte e serviços financeiros.
 
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
+2. Problema
 
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
+O problema central identificado é a falta de transparência, organização e acessibilidade no processo de formação de condutores.
 
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+Alunos enfrentam dificuldades como:
 
-## Objetivos
+Agendamento de aulas práticas e teóricas;
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
+Disponibilidade de instrutores que atendam suas necessidades de horários;
 
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Acompanhamento da regularidade da documentação;
 
-## Justificativa
+Compreensão das taxas e exigências legais;
 
-Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
+Acesso limitado a programas de inclusão, como o CNH Social.
 
-O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
+O contexto deste problema inclui a atuação de órgãos públicos (DENATRAN, Detran), instrutores de trânsito e candidatos à CNH. O problema é intensificado pela discussão sobre mudanças legais, como a possível extinção da obrigatoriedade de autoescolas, reforçando a necessidade de soluções digitais eficientes que atendam a um público cada vez mais conectado.
 
-> **Links Úteis**:
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+Ferramentas como Design Thinking podem ser utilizadas para mapear o problema de forma completa, considerando todas as etapas e atores envolvidos.
 
-## Público-Alvo
+3. Objetivos
+3.1 Objetivo Geral
 
-Descreva quem serão as pessoas que usarão a sua aplicação indicando os diferentes perfis. O objetivo aqui não é definir quem serão os clientes ou quais serão os papéis dos usuários na aplicação. A ideia é, dentro do possível, conhecer um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações
-hierárquicas, etc.
+Investigar e propor soluções digitais que simplifiquem e tornem mais eficiente o processo de formação de condutores, promovendo maior transparência, organização e inclusão.
 
-Adicione informações sobre o público-alvo por meio de uma descrição textual, diagramas de personas e mapa de stakeholders.
+3.2 Objetivos Específicos
 
-> **Links Úteis**:
-> - [Público-alvo](https://blog.hotmart.com/pt-br/publico-alvo/)
-> - [Como definir o público alvo](https://exame.com/pme/5-dicas-essenciais-para-definir-o-publico-alvo-do-seu-negocio/)
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
+Analisar o processo atual de formação de condutores e identificar gargalos e dificuldades enfrentadas pelos alunos;
+
+Pesquisar práticas digitais aplicadas a setores similares, como educação e mobilidade, para compreender soluções possíveis;
+
+Mapear os perfis dos usuários envolvidos, entendendo suas necessidades, limitações e expectativas;
+
+Propor indicadores que possam medir a melhoria de eficiência e acessibilidade no processo de formação de condutores.
+
+4. Justificativa
+
+A escolha deste tema é motivada pela necessidade de tornar o processo de habilitação mais acessível e eficiente, reduzindo entraves burocráticos e promovendo inclusão social. Além disso, o estudo deste problema oferece oportunidade de gerar insights relevantes sobre como a tecnologia pode otimizar processos educacionais e administrativos.
+
+O projeto também busca compreender como mudanças legais e sociais impactam a formação de condutores, de modo a oferecer soluções que sejam pertinentes, viáveis e alinhadas às demandas atuais. Questionários, entrevistas e dados estatísticos podem subsidiar a análise e fortalecer a relevância da proposta.
+
+5. Público-Alvo
+
+O público-alvo deste projeto compreende:
+
+Alunos/candidatos à CNH: pessoas de diferentes faixas etárias, com variados níveis de conhecimento tecnológico e necessidade de flexibilidade no agendamento de aulas;
+
+Instrutores de trânsito: profissionais experientes que atuam na formação de condutores, interessados em otimizar sua agenda e acessar ferramentas digitais;
+
+Órgãos públicos (Senatran/Detran): responsáveis pela regulamentação, validação de documentos e fiscalização;
+
+Stakeholders financeiros: intermediários envolvidos em pagamentos e repasses relacionados à formação de condutores.
