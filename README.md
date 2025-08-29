@@ -6,7 +6,11 @@
 
 `SEMESTRE`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+O presente relatório tem como objetivo apresentar o CNH Livre, um sistema digital inovador
+voltado à modernização do processo de formação de condutores no Brasil. A plataforma foi
+desenvolvida com a finalidade de conectar, de forma direta, alunos e instrutores de trânsito,
+promovendo praticidade, economia e acessibilidade no processo de obtenção da Carteira
+Nacional de Habilitação
 
 ## Integrantes
 
