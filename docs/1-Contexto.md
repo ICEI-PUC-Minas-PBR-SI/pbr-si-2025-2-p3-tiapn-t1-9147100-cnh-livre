@@ -56,4 +56,3 @@ Instrutores de trânsito: profissionais experientes que atuam na formação de c
 
 Órgãos públicos (Senatran/Detran): responsáveis pela regulamentação, validação de documentos e fiscalização;
 
-Stakeholders financeiros: intermediários envolvidos em pagamentos e repasses relacionados à formação de condutores.
