@@ -1,11 +1,12 @@
-Grupo 7 – Relatório CNH Livre
-1. Introdução
+<span style="color:red">Pré-requisitos: <a href="01-Documentação de Contexto.md"> Documentação de Contexto</a></span>
+
+## Introdução
 
 O presente projeto tem como objetivo analisar e apresentar soluções para a modernização do processo de formação de condutores no Brasil. O contexto envolve uma realidade em que o acesso à habilitação ainda é burocrático, caro e pouco acessível para grande parte da população. Muitos candidatos enfrentam dificuldades para encontrar instrutores confiáveis, organizar seus horários e compreender os processos legais e financeiros envolvidos.
 
 O projeto busca, portanto, estudar e propor meios digitais que promovam maior praticidade, transparência e inclusão nesse processo, considerando a crescente digitalização de serviços em setores como educação, transporte e serviços financeiros.
 
-2. Problema
+## Problema
 
 O problema central identificado é a falta de transparência, organização e acessibilidade no processo de formação de condutores.
 
@@ -25,12 +26,12 @@ O contexto deste problema inclui a atuação de órgãos públicos (DENATRAN, De
 
 Ferramentas como Design Thinking podem ser utilizadas para mapear o problema de forma completa, considerando todas as etapas e atores envolvidos.
 
-3. Objetivos
-3.1 Objetivo Geral
+## Objetivos
+## Objetivo Geral
 
 Investigar e propor soluções digitais que simplifiquem e tornem mais eficiente o processo de formação de condutores, promovendo maior transparência, organização e inclusão.
 
-3.2 Objetivos Específicos
+## Objetivos Específicos
 
 Analisar o processo atual de formação de condutores e identificar gargalos e dificuldades enfrentadas pelos alunos;
 
@@ -40,13 +41,12 @@ Mapear os perfis dos usuários envolvidos, entendendo suas necessidades, limita�
 
 Propor indicadores que possam medir a melhoria de eficiência e acessibilidade no processo de formação de condutores.
 
-4. Justificativa
+## Justificativa
 
 A escolha deste tema é motivada pela necessidade de tornar o processo de habilitação mais acessível e eficiente, reduzindo entraves burocráticos e promovendo inclusão social. Além disso, o estudo deste problema oferece oportunidade de gerar insights relevantes sobre como a tecnologia pode otimizar processos educacionais e administrativos.
 
 O projeto também busca compreender como mudanças legais e sociais impactam a formação de condutores, de modo a oferecer soluções que sejam pertinentes, viáveis e alinhadas às demandas atuais. Questionários, entrevistas e dados estatísticos podem subsidiar a análise e fortalecer a relevância da proposta.
-
-5. Público-Alvo
+## Público-Alvo
 
 O público-alvo deste projeto compreende:
 
