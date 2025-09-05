@@ -8,37 +8,30 @@ Apresente uma visão geral do que será abordado nesta parte do documento, enume
 
 ## Personas
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+João Silva, 22 anos, estudante universitário. Está em processo de tirar a primeira habilitação e tem dificuldades em acompanhar prazos e documentos exigidos pelo Detran. Procura uma solução simples que centralize as informações e evite atrasos.
+
+Maria Oliveira, 19 anos, estudante. Medo de achar um bom instrutor, mas quer tirar carteira logo. Quer um sistema que mostre instrutores confiaveis.
+
+Ana Souza, 20 anos, estudante universitária. Quer iniciar o processo para tirar a primeira habilitação, mas não tem tempo de pesquisar e negociar com várias autoescolas. Procura um aplicativo que facilite a contratação de instrutores e pacotes de aulas, de forma prática e confiável.
+
+Ricardo Lima, 32 anos, entregador de moto. Precisa renovar a CNH para continuar trabalhando. Gostaria de um serviço rápido, onde pudesse agendar exames e aulas diretamente pelo celular, sem burocracia.
+
+Fernanda Alves, 28 anos, instrutora de direção. Trabalha de forma independente e busca novos alunos. Quer uma plataforma que a ajude a se conectar com pessoas interessadas em aulas práticas, de maneira parecida com aplicativos de transporte.
 
 Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
+
 Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de Usuários
 
 Com base na análise das personas forma identificadas as seguintes histórias de usuários:
 
-|EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
-|--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+| EU COMO... PERSONA            | QUERO/PRECISO ... FUNCIONALIDADE  | PARA ... MOTIVO/VALOR                      |
+| ----------------------------- | --------------------------------- | ------------------------------------------ |
+| Aluno em busca de habilitação | Encontrar instrutores próximos    | Facilitar o início do processo de CNH      |
+| Aluno com CNH vencida         | Agendar aulas e exames            | Renovar a habilitação de forma rápida      |
+| Instrutor de direção          | Oferecer serviços pelo aplicativo | Conquistar novos alunos e aumentar a renda |
 
 
 
@@ -47,33 +40,25 @@ Apresente aqui as histórias de usuário que são relevantes para o projeto de s
 As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto. Para determinar a prioridade de requisitos, aplicar uma técnica de priorização de requisitos e detalhar como a técnica foi aplicada.
 
 ### Requisitos Funcionais
+| ID     | Descrição do Requisito                                                 | Prioridade |
+| ------ | ---------------------------------------------------------------------- | ---------- |
+| RF-001 | Permitir que o aluno cadastre perfil e solicite aulas                  | ALTA       |
+| RF-002 | Permitir que instrutores se cadastrem e ofereçam serviços              | ALTA       |
+| RF-003 | Oferecer sistema de geolocalização para encontrar instrutores próximos | ALTA       |
+| RF-004 | Disponibilizar agendamento de aulas práticas e teóricas                | ALTA       |
+| RF-005 | Permitir avaliações e feedback entre alunos e instrutores              | MÉDIA      |
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
 
 ### Requisitos não Funcionais
 
-|ID     | Descrição do Requisito  |Prioridade |
-|-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
+| ID      | Descrição do Requisito                                                          | Prioridade |
+| ------- | ------------------------------------------------------------------------------- | ---------- |
+| RNF-001 | O sistema deve ser responsivo e acessível em dispositivos móveis                | ALTA       |
+| RNF-002 | As requisições devem ser processadas em no máximo 3 segundos                    | MÉDIA      |
+| RNF-003 | O sistema deve garantir segurança no armazenamento de dados pessoais            | ALTA       |
+| RNF-004 | O aplicativo deve ter alta disponibilidade, suportando grande volume de acessos | MÉDIA      |
 
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
 
 ## Restrições
 
@@ -83,9 +68,8 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |--|-------------------------------------------------------|
 |01| O projeto deverá ser entregue até o final do semestre |
 |02| Não pode ser desenvolvido um módulo de backend        |
+ 03 Não haverá integração direta com os sistemas oficiais do Detran nesta versão
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
-> **Links Úteis**:
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+
