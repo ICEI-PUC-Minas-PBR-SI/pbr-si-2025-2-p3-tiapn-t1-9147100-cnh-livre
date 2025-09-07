@@ -7,18 +7,17 @@
 
 ### 3.1. Modelagem da situação atual (Modelagem AS IS)
 
-_Apresente uma descrição textual de como os sistemas atuais resolvem o problema que se propõe a resolver.  Caso sua proposta seja inovadora e não existam processos claramente definidos, **apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente**, mesmo que não se utilize tecnologia computacional._
+Hoje, quem quer tirar a CNH enfrenta várias etapas manuais e demoradas. O processo começa com a busca por uma autoescola, geralmente feita por indicação ou pesquisa própria. Depois, a pessoa precisa ligar ou ir até o local para consultar preços, pacotes e horários disponíveis. Não existe um canal centralizado que mostre todas as opções de forma clara.
 
-Com o tema do projeto definido, escolham alguns processos neste contexto de negócios. Para ilustrar potenciais ganhos com a automatização, imaginem processos manuais, ineficientes e/ou com muitas idas e vindas, gerando, assim, retrabalho.
-Colem aqui os modelos dos processos atuais (modelo AS-IS), elaborados com o apoio da ferramenta baseada em BPMN utilizada na disciplina.
+Outro ponto é a burocracia: muitos candidatos precisam levar documentos pessoalmente, confirmar datas de exames e organizar suas aulas. Isso gera confusão e perda de tempo, já que cada autoescola trabalha de um jeito diferente. Quem mora em cidades maiores ainda enfrenta o problema do deslocamento para comparar valores ou confirmar informações.
 
 ### 3.2. Descrição geral da proposta (Modelagem TO BE)
 
-Tendo identificado os gargalos dos modelos AS IS, apresentem uma descrição da proposta de solução, buscando maior eficiência com a introdução da tecnologia. Abordem também os limites dessa solução e o seu alinhamento com as estratégias e objetivos do contexto de negócio escolhido. 
-Colem aqui os modelos da solução proposta (modelo TO BE) elaborados com o apoio da ferramenta baseada em BPMN utilizada na disciplina.
-Cada processo identificado deve ter seu modelo TO-BE específico. Descrevam as oportunidades de melhoria de cada processo da solução proposta.
+O sistema CNH Livre funciona como um “Uber da CNH”. A ideia é centralizar autoescolas, instrutores e alunos em uma plataforma única. O candidato vai poder escolher a autoescola com base em preço, localização, avaliações e disponibilidade de horários. Isso elimina a necessidade de visitas presenciais só para conseguir informações.
 
-_Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias._
+O aplicativo também facilita o agendamento de aulas práticas e teóricas, além de permitir que a autoescola organize melhor sua agenda e receba pagamentos de forma integrada. O acompanhamento do progresso do aluno é feito diretamente pelo sistema, evitando retrabalho e perda de informações.
+
+Com essa solução, o processo fica mais ágil e transparente. O limite está em depender da adesão das autoescolas parceiras, já que o sistema só funciona bem se houver participação ativa. Mesmo assim, o projeto se alinha ao objetivo de modernizar o setor, oferecendo praticidade para os alunos e mais organização para as empresas.
 
 ### 3.3. Modelagem dos processos
 
