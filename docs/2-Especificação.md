@@ -2,9 +2,9 @@
 
 <span style="color:red">Pré-requisitos: <a href="01-Documentação de Contexto.md"> Documentação de Contexto</a></span>
 
-Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
+O projeto CNH Livre visa desenvolver uma plataforma que conecte alunos e instrutores de direção, funcionando de maneira semelhante a um “Uber da CNH”. A especificação do projeto apresenta a definição de personas, histórias de usuários, requisitos funcionais e não funcionais, além das restrições do sistema.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
+O objetivo é detalhar o problema do usuário, suas necessidades, e como o sistema vai fornecer uma solução prática e confiável, melhorando a experiência de quem deseja tirar, renovar ou oferecer aulas de CNH. As técnicas usadas incluem pesquisa de personas, levantamento de histórias de usuários e análise de prioridades dos requisitos.
 
 ## Personas
 
