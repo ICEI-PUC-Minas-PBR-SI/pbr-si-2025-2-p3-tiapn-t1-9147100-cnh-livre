@@ -8,13 +8,9 @@ O objetivo é detalhar o problema do usuário, suas necessidades, e como o siste
 
 ## Personas
 
-João Silva, 22 anos, estudante universitário. Está em processo de tirar a primeira habilitação e tem dificuldades em acompanhar prazos e documentos exigidos pelo Detran. Procura uma solução simples que centralize as informações e evite atrasos.
-
-Maria Oliveira, 19 anos, estudante. Medo de achar um bom instrutor, mas quer tirar carteira logo. Quer um sistema que mostre instrutores confiaveis.
+Maria Oliveira, 19 anos, estudante. Medo de achar um instrutor, mas quer tirar carteira logo. Quer um sistema que mostre instrutores confiaveis.
 
 Ana Souza, 20 anos, estudante universitária. Quer iniciar o processo para tirar a primeira habilitação, mas não tem tempo de pesquisar e negociar com várias autoescolas. Procura um aplicativo que facilite a contratação de instrutores e pacotes de aulas, de forma prática e confiável.
-
-Ricardo Lima, 32 anos, entregador de moto. Precisa renovar a CNH para continuar trabalhando. Gostaria de um serviço rápido, onde pudesse agendar exames e aulas diretamente pelo celular, sem burocracia.
 
 Fernanda Alves, 28 anos, instrutora de direção. Trabalha de forma independente e busca novos alunos. Quer uma plataforma que a ajude a se conectar com pessoas interessadas em aulas práticas, de maneira parecida com aplicativos de transporte.
 
