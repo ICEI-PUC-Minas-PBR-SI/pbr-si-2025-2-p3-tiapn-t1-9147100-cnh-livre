@@ -14,10 +14,7 @@ Ana Souza, 20 anos, estudante universitária. Quer iniciar o processo para tirar
 
 Fernanda Alves, 28 anos, instrutora de direção. Trabalha de forma independente e busca novos alunos. Quer uma plataforma que a ajude a se conectar com pessoas interessadas em aulas práticas, de maneira parecida com aplicativos de transporte.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
 
-
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
 
 ## Histórias de Usuários
 
