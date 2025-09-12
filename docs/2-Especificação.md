@@ -70,6 +70,6 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 |02| Não pode ser desenvolvido um módulo de backend        |
  03 Não haverá integração direta com os sistemas oficiais do Detran nesta versão
 
-Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
+
 
 
