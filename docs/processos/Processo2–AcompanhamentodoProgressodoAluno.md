@@ -1,3 +1,6 @@
+<img width="1198" height="270" alt="image" src="https://github.com/user-attachments/assets/9d325c39-981d-454f-bcb5-96aa4598f092" />
+
+
 ## 3.3.2 Processo 2 – Acompanhamento do Progresso do Aluno
 
 Atualmente, os alunos enfrentam dificuldade em acompanhar de forma clara quantas aulas já realizaram, quantas ainda faltam, e qual é o seu desempenho em simulados e exames. Muitas vezes precisam entrar em contato com a autoescola ou aguardar retorno do instrutor, o que gera demora.
@@ -43,5 +46,6 @@ O processo finaliza com a visualização ou exportação do progresso.
 | Nome do botão | Destino              | Tipo    |
 | ------------- | -------------------- | ------- |
 | Voltar        | Tela inicial aluno   | cancel  |
+
 
 
