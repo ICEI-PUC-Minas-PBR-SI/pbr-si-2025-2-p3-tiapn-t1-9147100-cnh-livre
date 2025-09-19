@@ -57,3 +57,26 @@ O processo é finalizado com a aula agendada.
 | Voltar        | Tela inicial         | cancel  |
 
 
+## Atividade 3 – Escolha do instrutor
+
+| Campo           | Tipo          | Restrições              | Valor default |
+| --------------- | ------------- | ----------------------- | ------------- |
+| Lista de opções | Seleção única | Instrutores disponíveis | —             |
+
+| Nome do botão | Destino                  | Tipo    |
+| ------------- | ------------------------ | ------- |
+| Solicitar     | Notificação ao instrutor | default |
+| Cancelar      | Tela inicial aluno       | cancel  |
+
+## Atividade 4 – Confirmação do instrutor
+
+| Campo              | Tipo          | Restrições      | Valor default |
+| ------------------ | ------------- | --------------- | ------------- |
+| Status da resposta | Seleção única | Aceitar/Recusar | —             |
+
+
+| Nome do botão | Destino              | Tipo    |
+| ------------- | -------------------- | ------- |
+| Confirmar     | Aula agendada (fim)  | default |
+| Recusar       | Solicitação pendente | cancel  |
+
