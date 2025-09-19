@@ -18,7 +18,13 @@
 ### 4.2. Protótipos de telas
 
 
-<img width="1068" height="767" alt="image" src="https://github.com/user-attachments/assets/df914f8e-9d17-451b-83d8-221a226e817b" />
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/df914f8e-9d17-451b-83d8-221a226e817b" />
+
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/c86fdf59-66f9-4e38-afcb-fe4770ef10ee" />
+
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/59910afa-e4bc-40cc-93a4-5cd39db57668" />
+
+
 
 
 ## Diagrama de Classes
