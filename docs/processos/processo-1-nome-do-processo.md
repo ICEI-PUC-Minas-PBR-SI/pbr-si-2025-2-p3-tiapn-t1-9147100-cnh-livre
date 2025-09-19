@@ -37,6 +37,8 @@ O processo é finalizado com a aula agendada.
 | ------------- | -------------------- | ------- |
 | Entrar        | Tela inicial aluno   | default |
 | Cadastrar     | Processo de cadastro | —       |
+<img width="949" height="672" alt="image" src="https://github.com/user-attachments/assets/ace60e53-1412-45ea-99a4-6e2f80a66b9a" />
+
 
 ## Atividade 2 – Solicitação de instrutor
 
