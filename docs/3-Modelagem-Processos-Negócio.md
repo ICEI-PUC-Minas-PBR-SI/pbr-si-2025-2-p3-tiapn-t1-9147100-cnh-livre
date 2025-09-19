@@ -21,4 +21,4 @@ Com essa solução, o processo fica mais ágil e transparente. O limite está em
 
 [Processo 1 – Solicitação de Instrutor](./processos/processo-1-nome-do-processo.md "Detalhamento do Processo 1.")
 
-[PROCESSO 2 - Nome do Processo](./processos/processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
+[Processo 2 – Acompanhamento do Progresso do Aluno](./processos/processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
