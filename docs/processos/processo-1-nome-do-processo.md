@@ -23,8 +23,8 @@ Caso aceite, o agendamento é registrado e o aluno recebe a confirmação.
 
 O processo é finalizado com a aula agendada.
 
-Detalhamento das Atividades
-Atividade 1 – Login no sistema
+## Detalhamento das Atividades
+## Atividade 1 – Login no sistema
 
 Campos
 
