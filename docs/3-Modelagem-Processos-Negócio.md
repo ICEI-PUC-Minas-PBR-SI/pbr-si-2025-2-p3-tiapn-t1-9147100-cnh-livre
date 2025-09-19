@@ -19,6 +19,6 @@ Com essa solução, o processo fica mais ágil e transparente. O limite está em
 
 ### 3.3. Modelagem dos processos
 
-[Processo 1 – Processo 1 – Solicitação de Instrutor](./processos/Processo-1–Solicitação-de-Instrutor.md "1 – Solicitação de Instrutor.md.")
+[Processo 1 – Processo 1 – Solicitação de Instrutor](./processos/Processo1-SolicitaçãodeInstrutor.md "1 – Solicitação de Instrutor.md.")
 
 [Processo 2 – Acompanhamento do Progresso do Aluno](./processos/Processo-2–Acompanhamento-do-Progresso-do-Aluno.md "1 – Solicitação de Instrutor.md.")
