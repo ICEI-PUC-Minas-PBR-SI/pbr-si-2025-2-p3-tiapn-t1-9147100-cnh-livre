@@ -1,6 +1,7 @@
 
 
-![Exemplo de um Modelo BPMN do PROCESSO 1](../images/process.png "Modelo BPMN do Processo 1.")
+<img width="1034" height="437" alt="image" src="https://github.com/user-attachments/assets/4b1b8e53-bfc9-4849-b654-0cbb2bddcee8" />
+
 
 ## 3.3.1 Processo 1 – Solicitação de Instrutor
 
