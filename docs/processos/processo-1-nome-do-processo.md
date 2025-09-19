@@ -1,67 +1,78 @@
-### 3.3.1 Processo 1 – NOME DO PROCESSO
 
-_Apresente aqui o nome e as oportunidades de melhoria para o processo 1. 
-Em seguida, apresente o modelo do processo 1, descrito no padrão BPMN._
 
 ![Exemplo de um Modelo BPMN do PROCESSO 1](../images/process.png "Modelo BPMN do Processo 1.")
 
-#### Detalhamento das atividades
+## 3.3.1 Processo 1 – Solicitação de Instrutor
 
-_Descreva aqui cada uma das propriedades das atividades do processo 1. 
-Devem estar relacionadas com o modelo de processo apresentado anteriormente._
+Atualmente, muitos candidatos que estão em processo de obtenção da CNH enfrentam dificuldade em encontrar instrutores disponíveis, organizar os horários de aula e acompanhar o andamento do processo. A ideia do CNH Livre é otimizar essa experiência por meio de um sistema que conecta alunos e instrutores de forma rápida e intuitiva, semelhante ao modelo de aplicativos de transporte.
 
-_Os tipos de dados a serem utilizados são:_
+O Processo 1 – Solicitação de Instrutor trata do fluxo em que o aluno solicita um instrutor disponível, agenda a aula e confirma sua participação.
+ 
 
-_* **Área de texto** - campo texto de múltiplas linhas_
+O aluno acessa o sistema e faz login.
 
-_* **Caixa de texto** - campo texto de uma linha_
+O aluno seleciona a opção “Solicitar Instrutor”.
 
-_* **Número** - campo numérico_
+O sistema apresenta a lista de instrutores disponíveis com horários, categorias e valores.
 
-_* **Data** - campo do tipo data (dd-mm-aaaa)_
+O aluno escolhe um instrutor e solicita a aula.
 
-_* **Hora** - campo do tipo hora (hh:mm:ss)_
+O instrutor recebe a notificação e confirma ou recusa a solicitação.
 
-_* **Data e Hora** - campo do tipo data e hora (dd-mm-aaaa, hh:mm:ss)_
+Caso aceite, o agendamento é registrado e o aluno recebe a confirmação.
 
-_* **Imagem** - campo contendo uma imagem_
+O processo é finalizado com a aula agendada.
 
-_* **Seleção única** - campo com várias opções de valores que são mutuamente exclusivas (tradicional radio button ou combobox)_
+Detalhamento das Atividades
+Atividade 1 – Login no sistema
 
-_* **Seleção múltipla** - campo com várias opções que podem ser selecionadas mutuamente (tradicional checkbox ou listbox)_
+Campos
 
-_* **Arquivo** - campo de upload de documento_
+Campo	Tipo	Restrições	Valor default
+Email	Caixa de texto	Formato de e-mail válido	—
+Senha	Caixa de texto	Mínimo de 8 caracteres	—
 
-_* **Link** - campo que armazena uma URL_
+Comandos
 
-_* **Tabela** - campo formado por uma matriz de valores_
+Nome do botão	Destino	Tipo
+Entrar	Tela inicial aluno	default
+Cadastrar	Processo de cadastro	—
+Atividade 2 – Solicitação de instrutor
 
+Campos
 
-**Nome da atividade 1**
+Campo	Tipo	Restrições	Valor default
+Categoria CNH	Seleção única	A, B, C, D ou E	—
+Localização	Caixa de texto	Obrigatório	Localização atual
+Data da aula	Data	Formato dd-mm-aaaa	—
+Horário	Hora	Formato hh:mm:ss	—
 
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+Comandos
 
-| **Comandos**         |  **Destino**                   | **Tipo** |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+Nome do botão	Destino	Tipo
+Buscar	Lista de instrutores	default
+Voltar	Tela inicial	cancel
+Atividade 3 – Escolha do instrutor
 
+Campos
 
-**Nome da atividade 2**
+Campo	Tipo	Restrições	Valor default
+Lista de opções	Seleção única	Instrutores disponíveis	—
 
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+Comandos
 
-| **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+Nome do botão	Destino	Tipo
+Solicitar	Notificação ao instrutor	default
+Cancelar	Tela inicial aluno	cancel
+Atividade 4 – Confirmação do instrutor
+
+Campos
+
+Campo	Tipo	Restrições	Valor default
+Status da resposta	Seleção única	Aceitar/Recusar	—
+
+Comandos
+
+Nome do botão	Destino	Tipo
+Confirmar	Aula agendada (fim)	default
+Recusar	Solicitação pendente	cancel
