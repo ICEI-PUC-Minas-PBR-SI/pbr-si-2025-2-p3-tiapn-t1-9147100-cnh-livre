@@ -1,6 +1,5 @@
 
 
-![Imagem do WhatsApp de 2025-09-19 à(s) 17 24 48_82b1dbe8](https://github.com/user-attachments/assets/119a2b94-c3a4-43ea-80f1-6de6e348232e)
 
 
 ## 3.3.1 Processo 1 – Solicitação de Instrutor
