@@ -3,7 +3,7 @@
 Atualmente, os alunos enfrentam dificuldade em acompanhar de forma clara quantas aulas já realizaram, quantas ainda faltam, e qual é o seu desempenho em simulados e exames. Muitas vezes precisam entrar em contato com a autoescola ou aguardar retorno do instrutor, o que gera demora.
 CNH Livre busca resolver esse problema oferecendo uma área no sistema em que o aluno pode visualizar em tempo real seu progresso, aumentando a transparência no processo de habilitação.
 
-Fluxo resumido:
+
 O aluno acessa o sistema e faz login.
 O aluno seleciona a opção “Acompanhar Progresso”.
 O sistema apresenta os dados de aulas, simulados e exames.
