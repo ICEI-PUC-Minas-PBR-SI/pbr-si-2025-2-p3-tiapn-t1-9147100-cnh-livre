@@ -19,6 +19,6 @@ Com essa solução, o processo fica mais ágil e transparente. O limite está em
 
 ### 3.3. Modelagem dos processos
 
-[Processo 1 – Solicitação de Instrutor]([[docs/processos/Processo1–SolicitaçãodeInstrutor.md](https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-2025-2-p3-tiapn-t1-9147100-cnh-livre/blob/main/docs/processos/Processo1%E2%80%93Solicita%C3%A7%C3%A3odeInstrutor.md)"](https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-2025-2-p3-tiapn-t1-9147100-cnh-livre/blob/main/docs/processos/Processo1%E2%80%93Solicita%C3%A7%C3%A3odeInstrutor.md))
+[Processo 1 – Solicitação de Instrutor](docs/processos/Processo1–SolicitaçãodeInstrutor.md)
 
 [Processo 2 – Acompanhamento do Progresso do Aluno](docs/processos/Processo2–AcompanhamentodoProgressodoAluno.md")
