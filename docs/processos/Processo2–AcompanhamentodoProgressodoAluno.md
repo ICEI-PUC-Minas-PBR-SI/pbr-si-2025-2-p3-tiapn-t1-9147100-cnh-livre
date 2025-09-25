@@ -1,4 +1,4 @@
-<img width="1198" height="270" alt="image" src="https://github.com/user-attachments/assets/9d325c39-981d-454f-bcb5-96aa4598f092" />
+
 
 
 ## 3.3.2 Processo 2 – Acompanhamento do Progresso do Aluno
@@ -12,6 +12,9 @@ O aluno seleciona a opção “Acompanhar Progresso”.
 O sistema apresenta os dados de aulas, simulados e exames.
 O aluno pode exportar as informações em relatório ou apenas visualizar.
 O processo finaliza com a visualização ou exportação do progresso.
+
+<img width="1409" height="759" alt="image" src="https://github.com/user-attachments/assets/1567acd9-96cf-4400-84fd-0eccf2ed1bc5" />
+
 
 ## Detalhamento das Atividades
 ## Atividade 1 – Login no sistema
