@@ -1,8 +1,3 @@
-
-<img width="1200" height="558" alt="image" src="https://github.com/user-attachments/assets/cf34d180-ff21-4aed-8deb-1d35f5dd6865" />
-
-
-
 ## 3.3.1 Processo 1 – Solicitação de Instrutor
 
 Atualmente, muitos candidatos que estão em processo de obtenção da CNH enfrentam dificuldade em encontrar instrutores disponíveis, organizar os horários de aula e acompanhar o andamento do processo. A ideia do CNH Livre é otimizar essa experiência por meio de um sistema que conecta alunos e instrutores de forma rápida e intuitiva, semelhante ao modelo de aplicativos de transporte. 
@@ -14,6 +9,9 @@ O aluno escolhe um instrutor e solicita a aula.
 O instrutor recebe a notificação e confirma ou recusa a solicitação.
 Caso aceite, o agendamento é registrado e o aluno recebe a confirmação.
 O processo é finalizado com a aula agendada.
+
+<img width="1141" height="734" alt="image" src="https://github.com/user-attachments/assets/73fcd761-dce2-4f76-8d18-8dbd0ac75699" />
+
 
 ## Detalhamento das Atividades
 ## Atividade 1 – Login no sistema
