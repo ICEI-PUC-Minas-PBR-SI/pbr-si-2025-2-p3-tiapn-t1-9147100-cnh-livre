@@ -22,3 +22,6 @@ Com essa solução, o processo fica mais ágil e transparente. O limite está em
 [Processo 1 – Solicitação de Instrutor](processos/Processo1–SolicitaçãodeInstrutor.md)
 
 [Processo 2 – Acompanhamento do Progresso do Aluno](processos/Processo2–AcompanhamentodoProgressodoAluno.md)
+
+[Processo 3 - Cadastro de Usuario](processos/Processo3-CadastrodeUsuario.md)
+
