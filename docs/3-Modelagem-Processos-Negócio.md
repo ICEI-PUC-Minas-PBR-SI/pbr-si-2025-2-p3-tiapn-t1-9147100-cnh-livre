@@ -11,12 +11,11 @@ Outro ponto é a burocracia: muitos candidatos precisam levar documentos pessoal
 
 ### 3.2. Descrição geral da proposta (Modelagem TO BE)
 
-O sistema CNH Livre funciona como um “Uber da CNH”. A ideia é centralizar autoescolas, instrutores e alunos em uma plataforma única. O candidato vai poder escolher a autoescola com base em preço, localização, avaliações e disponibilidade de horários. Isso elimina a necessidade de visitas presenciais só para conseguir informações.
+O sistema CNH Livre funciona como um “Uber da CNH”, conectando candidatos, instrutores e autoescolas em uma única plataforma digital. A proposta é modernizar a forma como os futuros condutores acessam serviços de formação, trazendo agilidade, praticidade e transparência para todo o processo.
 
-O aplicativo também facilita o agendamento de aulas práticas e teóricas, além de permitir que a autoescola organize melhor sua agenda e receba pagamentos de forma integrada. O acompanhamento do progresso do aluno é feito diretamente pelo sistema, evitando retrabalho e perda de informações.
+O aplicativo centraliza as principais funcionalidades para atender as necessidades dos usuários. No Processo 1, o aluno solicita instrutores disponíveis, verifica horários, preços, categorias de habilitação e agenda aulas de forma rápida. No Processo 2, o sistema registra e organiza a evolução do candidato, incluindo aulas práticas, teóricas e exames, oferecendo uma visão clara de etapas concluídas e pendentes. No Processo 3, o aluno realiza seu cadastro de forma simples e validada. No Processo 4, o instrutor se registra na plataforma anexando documentos profissionais que passam por validação antes da liberação. No Processo 5, o aluno realiza simulados teóricos online com feedback imediato e histórico de desempenho para reforçar sua preparação.
 
-Com essa solução, o processo fica mais ágil e transparente. O limite está em depender da adesão das autoescolas parceiras, já que o sistema só funciona bem se houver participação ativa. Mesmo assim, o projeto se alinha ao objetivo de modernizar o setor, oferecendo praticidade para os alunos e mais organização para as empresas.
-
+O sistema também permite o agendamento de aulas práticas e teóricas, pagamentos digitais centralizados e relatórios de desempenho que apoiam a gestão das autoescolas. O processo de obtenção da CNH torna-se mais acessível, organizado e eficiente. A limitação está na adesão das autoescolas e instrutores, pois o sistema depende da participação ativa dos parceiros. O projeto se mostra inovador e alinhado à necessidade de modernização do setor de formação de condutores no Brasil.
 ### 3.3. Modelagem dos processos
 
 [Processo 1 – Solicitação de Instrutor](processos/Processo1–SolicitaçãodeInstrutor.md)
