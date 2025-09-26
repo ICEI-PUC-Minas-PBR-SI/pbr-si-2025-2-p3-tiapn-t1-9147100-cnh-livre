@@ -7,6 +7,7 @@ O CNH Livre oferece uma plataforma para instrutores de autoescola se cadastrarem
 
 
 
+<img width="1273" height="812" alt="Diagrama sem nome drawio (2)" src="https://github.com/user-attachments/assets/f45812a5-2fd3-4260-8776-8b48a0d3c58c" />
 
  
 ## Detalhamento das Atividades 
