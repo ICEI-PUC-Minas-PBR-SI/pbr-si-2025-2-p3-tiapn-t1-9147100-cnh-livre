@@ -1,7 +1,7 @@
 
 
 
-## 3.3.1 Processo 1 – Solicitação de Instrutor
+## 3.3.3 Processo 3 – Cadastro de Usuario
 
 Atualmente, muitos candidatos que estão em processo de obtenção da CNH enfrentam dificuldade em encontrar instrutores disponíveis, organizar os horários de aula e acompanhar o andamento do processo. A ideia do CNH Livre é otimizar essa experiência por meio de um sistema que conecta alunos e instrutores de forma rápida e intuitiva, semelhante ao modelo de aplicativos de transporte. 
 
