@@ -8,9 +8,10 @@ Atualmente, muitos candidatos que desejam iniciar o processo de obtenção da CN
 O aluno acessa o sistema através da URL. O aluno clica no botão "Sou Aluno". O aluno preenche o formulário de cadastro com informações pessoais. O sistema valida os dados informados. Caso todos os campos estejam corretos, a conta é criada. O aluno é redirecionado para a área logada 
  
 
-![Uploading Diagrama sem nome.drawio.png…]()
 
 
+
+<img width="1272" height="681" alt="Diagrama sem nome drawio" src="https://github.com/user-attachments/assets/d469b99e-ffe3-4c41-ab08-36d1ddd7391b" />
 
 ## Detalhamento das Atividades
 ## Atividade 1 – Acesso ao Sistema
