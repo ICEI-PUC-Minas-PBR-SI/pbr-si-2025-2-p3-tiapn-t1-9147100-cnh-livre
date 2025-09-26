@@ -14,6 +14,9 @@ O instrutor recebe a notificação e confirma ou recusa a solicitação.
 Caso aceite, o agendamento é registrado e o aluno recebe a confirmação.
 O processo é finalizado com a aula agendada.
 
+<img width="1272" height="681" alt="Diagrama sem nome drawio" src="https://github.com/user-attachments/assets/214c9175-36fb-4866-ad99-b2c9e753b58c" />
+
+
 ## Detalhamento das Atividades
 ## Atividade 1 – Login no sistema 
 
