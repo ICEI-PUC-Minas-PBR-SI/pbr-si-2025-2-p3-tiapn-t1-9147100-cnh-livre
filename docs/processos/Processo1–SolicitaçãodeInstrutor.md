@@ -15,6 +15,7 @@ O processo é finalizado com a aula agendada.
 
 ## Detalhamento das Atividades
 ## Atividade 1 – Login no sistema
+<img width="945" height="670" alt="image" src="https://github.com/user-attachments/assets/a760e477-4583-4420-b0cb-01ecb61c9221" />
 
 
 | Campo | Tipo           | Restrições               | Valor default |
