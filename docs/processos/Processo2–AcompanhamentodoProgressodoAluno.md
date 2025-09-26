@@ -13,7 +13,8 @@ O sistema apresenta os dados de aulas, simulados e exames.
 O aluno pode exportar as informações em relatório ou apenas visualizar.
 O processo finaliza com a visualização ou exportação do progresso.
 
-<img width="1409" height="759" alt="image" src="https://github.com/user-attachments/assets/1567acd9-96cf-4400-84fd-0eccf2ed1bc5" />
+<img width="1405" height="819" alt="image" src="https://github.com/user-attachments/assets/08eec3ce-9f4e-4688-b07c-68b9f3925a99" />
+
 
 
 ## Detalhamento das Atividades
