@@ -6,7 +6,6 @@ O CNH Livre oferece uma plataforma para instrutores de autoescola se cadastrarem
  O instrutor acessa o sistema através da URL. O instrutor Clica no botão "Sou Instrutor". O instrutor Preenche o formulário de cadastro com informações pessoais e profissionais. O instrutor Faz upload dos documentos necessários. O sistema valida os dados informados.Caso todos os campos estejam corretos, a conta é criada (pendente de verificação). O instrutor é redirecionado para a área de cadastro em análise 
 
 
-<img width="1141" height="734" alt="image" src="https://github.com/user-attachments/assets/73fcd761-dce2-4f76-8d18-8dbd0ac75699" />
 
 
  
