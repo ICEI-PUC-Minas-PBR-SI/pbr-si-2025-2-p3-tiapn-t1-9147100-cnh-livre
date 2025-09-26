@@ -20,7 +20,8 @@ O CNH Livre oferece uma plataforma para instrutores de autoescola se cadastrarem
 | --------------------- | ------ | -------------------------- | ----------- |
 | Botão "Sou Instrutor" | Clique | Tela de cadastro instrutor | default     |
 | Botão "Sou Aluno"     | Clique | Cadastro aluno             | alternativo |
- 
+ <img width="1138" height="819" alt="image" src="https://github.com/user-attachments/assets/f4d2bebf-fb9e-48e4-b712-19e107b41a22" />
+
  
 ## Atividade 2 – Formulário de Cadastro do Instrutor 
 | Campo                    | Tipo             | Restrições                       | Valor default |
@@ -35,6 +36,7 @@ O CNH Livre oferece uma plataforma para instrutores de autoescola se cadastrarem
 | Preço por Aula (R$)      | Número decimal   | Mínimo R$ 50,00                  | 70,00         |
 | Experiência Profissional | Área de texto    | Máximo 500 caracteres            | —             |
 | Biografia                | Área de texto    | Máximo 1000 caracteres           | —             |
+<img width="1157" height="796" alt="image" src="https://github.com/user-attachments/assets/f7fb97df-a571-4a39-8995-c4a48ae47992" />
 
  
 ## Atividade 3 – Upload de Documentos 
