@@ -9,58 +9,79 @@ O CNH Livre oferece uma plataforma para instrutores de autoescola se cadastrarem
 <img width="1141" height="734" alt="image" src="https://github.com/user-attachments/assets/73fcd761-dce2-4f76-8d18-8dbd0ac75699" />
 
 
-# Fluxo de Cadastro de Instrutor - CNH Livre
+ 
+## Detalhamento das Atividades 
 
-```mermaid
-flowchart TD
-    A[Atividade 1 - Acesso ao Sistema] -->|Sou Instrutor| B[Atividade 2 - Formulário de Cadastro]
-    A -->|Sou Aluno| Z[Cadastro Aluno]
+## Atividade 1 – Acesso ao Sistema 
 
-    B --> C[Atividade 3 - Upload de Documentos]
-    C --> D[Configurações de Trabalho]
-    D --> E[Validação do Sistema]
-    E --> F[Confirmação de Cadastro]
+| Campo | Tipo      | Restrições     | Valor default                                |
+| ----- | --------- | -------------- | -------------------------------------------- |
+| URL   | Navegador | Acesso via web | [https://cnhlivre.com](https://cnhlivre.com) |
+| Elemento              | Ação   | Destino                    | Tipo        |
+| --------------------- | ------ | -------------------------- | ----------- |
+| Botão "Sou Instrutor" | Clique | Tela de cadastro instrutor | default     |
+| Botão "Sou Aluno"     | Clique | Cadastro aluno             | alternativo |
+ 
+ 
+## Atividade 2 – Formulário de Cadastro do Instrutor 
+| Campo                    | Tipo             | Restrições                       | Valor default |
+| ------------------------ | ---------------- | -------------------------------- | ------------- |
+| Nome Completo            | Caixa de texto   | Obrigatório, mínimo 3 caracteres | —             |
+| CPF                      | Caixa de texto   | Formato XXX.XXX.XXX-XX, válido   | —             |
+| Email                    | Caixa de texto   | Formato de e-mail válido         | —             |
+| Senha                    | Caixa de texto   | Mínimo 8 caracteres              | —             |
+| Cidade/UF                | Caixa de texto   | Obrigatório                      | —             |
+| Nº do Credenciamento     | Caixa de texto   | Obrigatório, formato DETRAN      | —             |
+| Categorias que Ensina    | Seleção múltipla | A, B, C, D, E, AB                | B             |
+| Preço por Aula (R$)      | Número decimal   | Mínimo R$ 50,00                  | 70,00         |
+| Experiência Profissional | Área de texto    | Máximo 500 caracteres            | —             |
+| Biografia                | Área de texto    | Máximo 1000 caracteres           | —             |
 
-    %% Detalhes
-    subgraph Formulário
-        B1[Nome Completo - obrigatório, min 3]
-        B2[CPF - formato válido]
-        B3[Email - válido]
-        B4[Senha - min 8]
-        B5[Cidade/UF - obrigatório]
-        B6[Nº Credenciamento - formato DETRAN]
-        B7[Categorias - múltipla, default B]
-        B8[Preço - min R$50, default 70]
-        B9[Experiência - max 500]
-        B10[Biografia - max 1000]
-    end
+ 
+## Atividade 3 – Upload de Documentos 
+| Campo                    | Tipo           | Restrições              | Valor default |
+| ------------------------ | -------------- | ----------------------- | ------------- |
+| CNH (Frente e Verso)     | Upload arquivo | PDF, JPG, PNG (max 5MB) | —             |
+| Credenciamento DETRAN    | Upload arquivo | PDF, JPG, PNG (max 5MB) | —             |
+| Certificado de Instrutor | Upload arquivo | PDF, JPG, PNG (max 5MB) | —             |
+| Foto Profissional        | Upload arquivo | JPG, PNG (max 2MB)      | —             |
+| Nome do botão     | Destino       | Tipo      | Comportamento     |
+| ----------------- | ------------- | --------- | ----------------- |
+| Enviar Documentos | Validação     | default   | Verifica arquivos |
+| Pular Etapa       | Próxima etapa | secondary | Upload opcional   |
 
-    subgraph Documentos
-        C1[CNH frente e verso - até 5MB]
-        C2[Credenciamento DETRAN - até 5MB]
-        C3[Certificado Instrutor - até 5MB]
-        C4[Foto Profissional - até 2MB]
-    end
+ 
+ 
+## Atividade 4 - Configurações de Trabalho 
+| Campo                    | Tipo             | Restrições          | Valor default |
+| ------------------------ | ---------------- | ------------------- | ------------- |
+| Aceita CNH Social?       | Checkbox         | Sim/Não             | Não           |
+| Horários de Trabalho     | Seleção múltipla | Manhã, Tarde, Noite | Manhã, Tarde  |
+| Dias da Semana           | Seleção múltipla | Seg-Sex, Sábado     | Seg-Sex       |
+| Raio de Atendimento (km) | Número           | 5-50 km             | 20            |
+| Veículo Próprio?         | Checkbox         | Sim/Não             | Sim           |
+| Nome do botão      | Destino    | Tipo    | Comportamento   |
+| ------------------ | ---------- | ------- | --------------- |
+| Finalizar Cadastro | Análise    | primary | Valida tudo     |
+| Voltar             | Documentos | cancel  | Editar anterior |
 
-    subgraph Configurações
-        D1[Aceita CNH Social? - default Não]
-        D2[Horários - manhã/tarde/noite - default manhã,tarde]
-        D3[Dias - seg-sex, sábado - default seg-sex]
-        D4[Raio atendimento - 5 a 50km - default 20]
-        D5[Veículo próprio? - default Sim]
-    end
+ 
+## Atividade 5 - Validação do Sistema 
+| Campo                   | Tipo      | Restrições             | Ação do sistema                                      |
+| ----------------------- | --------- | ---------------------- | ---------------------------------------------------- |
+| Campos obrigatórios     | Validação | Verifica preenchimento | Exibe alerta "Preencha todos os campos obrigatórios" |
+| CPF inválido            | Validação | Formato e dígitos      | Exibe alerta "CPF inválido"                          |
+| Email inválido          | Validação | Formato e domínio      | Exibe alerta "E-mail inválido"                       |
+| Credenciamento inválido | Validação | Formato DETRAN         | Exibe alerta "Número de credenciamento inválido"     |
+| Preço muito baixo       | Validação | Mínimo R$ 50,00        | Exibe alerta "Preço mínimo é R$ 50,00"               |
 
-    subgraph Validações
-        E1[Campos obrigatórios]
-        E2[CPF inválido]
-        E3[Email inválido]
-        E4[Credenciamento inválido]
-        E5[Preço abaixo de R$50]
-    end
-
-    subgraph Confirmação
-        F1[Status: Em análise / Sucesso / Erro]
-        F2[Mensagem: Em análise -> Dashboard limitado]
-        F3[Tempo estimado: 2-3 dias úteis]
-        F4[Botão OK -> Área restrita]
-    end
+ 
+## Atividade 6 - Confirmação de Cadastro 
+| Campo              | Tipo     | Restrições                  | Valor default |
+| ------------------ | -------- | --------------------------- | ------------- |
+| Status do cadastro | Mensagem | Em análise / Sucesso / Erro | Em análise    |
+| Elemento              | Ação       | Destino            | Condição         |
+| --------------------- | ---------- | ------------------ | ---------------- |
+| Mensagem "Em análise" | Exibição   | Dashboard limitado | Cadastro enviado |
+| Tempo estimado        | Informação | —                  | 2-3 dias úteis   |
+| Botão "OK"            | Clique     | Área restrita      | Após submissão   |
