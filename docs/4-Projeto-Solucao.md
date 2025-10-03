@@ -1,6 +1,5 @@
 ## 4. Projeto da Solução
 
-<span style="color:red">Pré-requisitos: <a href="03-Modelagem do Processo de Negocio.md"> Modelagem do Processo de Negocio</a></span>
 
 ## 4.1. Arquitetura da solução
 
