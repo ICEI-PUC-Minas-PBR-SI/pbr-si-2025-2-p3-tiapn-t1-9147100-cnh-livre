@@ -5,26 +5,64 @@
 ## 4.1. Arquitetura da solução
 
 
-......  COLOQUE AQUI O SEU TEXTO E O DIAGRAMA DE ARQUITETURA .......
+A solução proposta será construída em uma arquitetura cliente-servidor em camadas, que favorece modularidade, escalabilidade e manutenção. O modelo considera as interações de alunos, instrutores e administradores do sistema CNH Livre.
 
- Inclua um diagrama da solução e descreva os módulos e as tecnologias
- que fazem parte da solução. Discorra sobre o diagrama.
- 
- **Exemplo do diagrama de Arquitetura**:
+Componentes da Arquitetura
+
+Front-End (Apresentação): Desenvolvido em HTML, CSS e JavaScript, responsável pela interface com o usuário. As telas foram prototipadas visando simplicidade e usabilidade.
+
+Back-End (Lógica de Negócio): Implementado em Java com Spring Boot, fará o processamento das regras de negócio, autenticação, controle de agendamentos e simulados.
+
+Banco de Dados: Utilização do MySQL, que armazenará dados de usuários, instrutores, aulas e resultados de simulados.
+
+Integração e Deploy: O código será versionado no GitHub. Para deploy, o GitHub Pages será utilizado em protótipos estáticos e plataformas como Render/Heroku poderão hospedar o back-end.
  
  ![Exemplo de Arquitetura](./images/arquitetura-exemplo.png)
  
 
 ### 4.2. Protótipos de telas
 
+Tela Inicial (Home)
+
+Apresenta o sistema com destaque para a missão: conectar alunos e instrutores.
+
+Mostra número de instrutores próximos e aulas agendadas.
+
+Botões de acesso rápido: Sou Aluno e Sou Instrutor.
 
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/df914f8e-9d17-451b-83d8-221a226e817b" />
 
+Tela de Login e Cadastro
+
+Cadastro: formulário de criação de conta (nome, CPF, e-mail, senha, categoria CNH, cidade/UF e opção CNH Social).
+
+Login: acesso por e-mail e senha.
+
+Permite inclusão de alunos no plano social de CNH.}
+
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/c86fdf59-66f9-4e38-afcb-fe4770ef10ee" />
+
+Tela de Busca de Instrutores
+
+Pesquisa instrutores por cidade/UF e categoria de habilitação.
+
+Filtros: ordenar por avaliação e mostrar apenas instrutores que aceitam CNH Social.
 
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/59910afa-e4bc-40cc-93a4-5cd39db57668" />
 
+Tela de Simulados Detran
+
+Opções de prática: Simulado Rápido, Completo, por Categoria e Estatísticas.
+
+Mostra o progresso do aluno em número de questões respondidas e percentual de acertos.
+
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/f316bcd8-8c57-483a-b554-0b9f38b0a7c6" />
+
+Tela de Questões (Simulado)
+
+Questões de múltipla escolha.
+
+Permite seleção de alternativa e acompanhamento de desempenho.
 
 
 
@@ -34,12 +72,21 @@
 
 ## Diagrama de Classes
 
-O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
+O diagrama de classes UML modela a estrutura básica do sistema:
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
+Usuário (UsuarioID, Nome, Email, Senha, Tipo)
 
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
+Instrutor (InstrutorID, Nome, Categoria, Cidade, Avaliação)
+
+Aluno (AlunoID, Nome, CPF, Cidade, CategoriaCNH)
+
+Processo/Aula (AulaID, Data, Status, fk_aluno, fk_instrutor)
+
+Simulado (SimuladoID, Tipo, Resultado, fk_aluno)
+
+Questão (QuestaoID, Enunciado, Alternativas, RespostaCorreta)
+
+As classes se relacionam por associações, representando cadastros, aulas agendadas e realização de simulados.
 
 ## Modelo ER
 
@@ -58,83 +105,90 @@ _Apresente o modelo de dados por meio de um modelo relacional que contemple todo
 
 #### 4.3.1 Modelo ER
 
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
+4.3.1 Modelo ER
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
+Entidades principais e seus relacionamentos:
 
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
+Usuário (Aluno/Instrutor)
+
+Aula (Agendamento)
+
+Simulado
+
+Questão
+
+Resultado
 
 #### 4.3.2 Esquema Relacional
 
-O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
- 
-As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
+Representação em tabelas:
 
-> - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
+Usuario (UsuarioID PK, Nome, Email, Senha, Tipo)
 
-![Exemplo de um modelo relacional](images/modeloRelacional.png "Exemplo de Modelo Relacional.")
----
+Instrutor (InstrutorID PK, Nome, Categoria, Cidade, Avaliacao)
+
+Aluno (AlunoID PK, Nome, CPF, Cidade, CategoriaCNH)
+
+Aula (AulaID PK, Data, Status, AlunoID FK, InstrutorID FK)
+
+Simulado (SimuladoID PK, Tipo, Resultado, AlunoID FK)
+
+Questao (QuestaoID PK, Enunciado, Alternativas, RespostaCorreta)
 
 
 #### 4.3.3 Modelo Físico
 
-Insira aqui o script de criação das tabelas do banco de dados.
-
-Veja um exemplo:
-
-<code>
-
- -- Criação da tabela Médico
-CREATE TABLE Medico (
-    MedCodigo INTEGER PRIMARY KEY,
-    MedNome VARCHAR(100)
+CREATE TABLE Usuario (
+    UsuarioID INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) UNIQUE NOT NULL,
+    Senha VARCHAR(100) NOT NULL,
+    Tipo ENUM('Aluno','Instrutor','Admin')
 );
 
-
--- Criação da tabela Paciente
-CREATE TABLE Paciente (
-    PacCodigo INTEGER PRIMARY KEY,
-    PacNome VARCHAR(100)
+CREATE TABLE Instrutor (
+    InstrutorID INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(100) NOT NULL,
+    Categoria CHAR(1) NOT NULL,
+    Cidade VARCHAR(100),
+    Avaliacao DECIMAL(2,1)
 );
 
--- Criação da tabela Consulta
-CREATE TABLE Consulta (
-    ConCodigo INTEGER PRIMARY KEY,
-    MedCodigo INTEGER,
-    PacCodigo INTEGER,
-    Data DATE,
-    FOREIGN KEY (MedCodigo) REFERENCES Medico(MedCodigo),
-    FOREIGN KEY (PacCodigo) REFERENCES Paciente(PacCodigo)
+CREATE TABLE Aluno (
+    AlunoID INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(100) NOT NULL,
+    CPF VARCHAR(14) UNIQUE NOT NULL,
+    Cidade VARCHAR(100),
+    CategoriaCNH CHAR(1)
 );
 
--- Criação da tabela Medicamento
-CREATE TABLE Medicamento (
-    MdcCodigo INTEGER PRIMARY KEY,
-    MdcNome VARCHAR(100)
+CREATE TABLE Aula (
+    AulaID INT PRIMARY KEY AUTO_INCREMENT,
+    Data DATE NOT NULL,
+    Status VARCHAR(50),
+    AlunoID INT,
+    InstrutorID INT,
+    FOREIGN KEY (AlunoID) REFERENCES Aluno(AlunoID),
+    FOREIGN KEY (InstrutorID) REFERENCES Instrutor(InstrutorID)
 );
 
--- Criação da tabela Prescricao
-CREATE TABLE Prescricao (
-    ConCodigo INTEGER,
-    MdcCodigo INTEGER,
-    Posologia VARCHAR(200),
-    PRIMARY KEY (ConCodigo, MdcCodigo),
-    FOREIGN KEY (ConCodigo) REFERENCES Consulta(ConCodigo),
-    FOREIGN KEY (MdcCodigo) REFERENCES Medicamento(MdcCodigo)
+CREATE TABLE Simulado (
+    SimuladoID INT PRIMARY KEY AUTO_INCREMENT,
+    Tipo VARCHAR(50),
+    Resultado INT,
+    AlunoID INT,
+    FOREIGN KEY (AlunoID) REFERENCES Aluno(AlunoID)
 );
 
-</code>
-
-Este script deverá ser incluído em um arquivo .sql na pasta src\bd.
-
-
-
+CREATE TABLE Questao (
+    QuestaoID INT PRIMARY KEY AUTO_INCREMENT,
+    Enunciado TEXT NOT NULL,
+    Alternativas TEXT,
+    RespostaCorreta CHAR(1)
+);
 
 ### 4.4. Tecnologias
-
-_Descreva qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas._
-
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+A implementação utilizará tecnologias modernas e acessíveis:
 
 
 | **Dimensão**   | **Tecnologia**  |
