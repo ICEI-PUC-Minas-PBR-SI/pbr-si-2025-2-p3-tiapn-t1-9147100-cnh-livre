@@ -42,12 +42,6 @@ Permite inclusão de alunos no plano social de CNH.}
 
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/c86fdf59-66f9-4e38-afcb-fe4770ef10ee" />
 
-Tela de Busca de Instrutores
-
-Pesquisa instrutores por cidade/UF e categoria de habilitação.
-
-Filtros: ordenar por avaliação e mostrar apenas instrutores que aceitam CNH Social.
-
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/59910afa-e4bc-40cc-93a4-5cd39db57668" />
 
 Tela de Simulados Detran
