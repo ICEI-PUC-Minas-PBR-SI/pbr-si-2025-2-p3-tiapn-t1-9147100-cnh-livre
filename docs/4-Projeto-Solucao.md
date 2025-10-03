@@ -166,7 +166,6 @@ CREATE TABLE Questao (
 
 
 
-### 4.4. Tecnologias
 A implementação utilizará tecnologias modernas e acessíveis:
 
 
