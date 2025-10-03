@@ -181,4 +181,6 @@ A implementação utilizará tecnologias modernas e acessíveis:
 | Front end      | HTML+CSS+JS     |
 | Back end       | Java SpringBoot |
 | Deploy         | Github Pages    |
+| IDE            | VS Code         |
+| Modelagem      | Draw.io / Figm  |
 
