@@ -16,7 +16,8 @@ Banco de Dados: Utilização do MySQL, que armazenará dados de usuários, instr
 
 Integração e Deploy: O código será versionado no GitHub. Para deploy, o GitHub Pages será utilizado em protótipos estáticos e plataformas como Render/Heroku poderão hospedar o back-end.
  
- ![Exemplo de Arquitetura](./images/arquitetura-exemplo.png)
+ <img width="748" height="416" alt="image" src="https://github.com/user-attachments/assets/66b16d86-f082-4e06-a6ae-46cc738b6195" />
+
  
 
 ### 4.2. Protótipos de telas
