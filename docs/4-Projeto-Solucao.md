@@ -1,7 +1,7 @@
 ## 4. Projeto da Solução
 
 
-## 4.1. Arquitetura da solução
+### 4.1. Arquitetura da solução
 
 
 A solução proposta será construída em uma arquitetura cliente-servidor em camadas, que favorece modularidade, escalabilidade e manutenção. O modelo considera as interações de alunos, instrutores e administradores do sistema CNH Livre.
