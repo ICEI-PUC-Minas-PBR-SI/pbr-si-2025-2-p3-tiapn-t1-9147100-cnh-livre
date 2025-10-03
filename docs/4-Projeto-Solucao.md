@@ -162,7 +162,8 @@ CREATE TABLE Questao (
     Enunciado TEXT NOT NULL,
     Alternativas TEXT,
     RespostaCorreta CHAR(1)
-); \\\
+);
+```
 
 
 4.4 TECNOLOGIA
