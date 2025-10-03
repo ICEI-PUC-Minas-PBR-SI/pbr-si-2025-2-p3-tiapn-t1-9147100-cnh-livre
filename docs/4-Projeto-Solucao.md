@@ -72,16 +72,8 @@ Questão (QuestaoID, Enunciado, Alternativas, RespostaCorreta)
 
 As classes se relacionam por associações, representando cadastros, aulas agendadas e realização de simulados.
 
-## Modelo ER
 
-O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
-
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
-
-
-### 4.3. Modelo de dados
+## 4.3. Modelo de dados
 
 O desenvolvimento da solução proposta requer a existência de bases de dados que permitam efetuar os cadastros de dados e controles associados aos processos identificados, assim como recuperações.
 Utilizando a notação do DER (Diagrama Entidade e Relacionamento), elaborem um modelo, na ferramenta visual indicada na disciplina, que contemple todas as entidades e atributos associados às atividades dos processos identificados. Deve ser gerado um único DER que suporte todos os processos escolhidos, visando, assim, uma base de dados integrada. O modelo deve contemplar, também, o controle de acesso de usuários (partes interessadas dos processos) de acordo com os papéis definidos nos modelos do processo de negócio.
@@ -122,6 +114,7 @@ Questao (QuestaoID PK, Enunciado, Alternativas, RespostaCorreta)
 
 #### 4.3.3 Modelo Físico
 
+```sql
 CREATE TABLE Usuario (
     UsuarioID INT PRIMARY KEY AUTO_INCREMENT,
     Nome VARCHAR(100) NOT NULL,
@@ -171,6 +164,8 @@ CREATE TABLE Questao (
     RespostaCorreta CHAR(1)
 );
 
+
+
 ### 4.4. Tecnologias
 A implementação utilizará tecnologias modernas e acessíveis:
 
@@ -183,4 +178,6 @@ A implementação utilizará tecnologias modernas e acessíveis:
 | Deploy         | Github Pages    |
 | IDE            | VS Code         |
 | Modelagem      | Draw.io / Figm  |
+
+
 
