@@ -166,7 +166,7 @@ CREATE TABLE Questao (
 ```
 
 
-4.4 TECNOLOGIA
+##4.4 TECNOLOGIA
 A implementação utilizará tecnologias modernas e acessíveis:
 
 
