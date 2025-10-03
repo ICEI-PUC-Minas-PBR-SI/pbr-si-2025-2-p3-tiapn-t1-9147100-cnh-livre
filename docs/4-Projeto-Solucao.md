@@ -44,20 +44,14 @@ Permite inclusão de alunos no plano social de CNH.}
 
 <img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/59910afa-e4bc-40cc-93a4-5cd39db57668" />
 
-Tela de Simulados Detran
-
-Opções de prática: Simulado Rápido, Completo, por Categoria e Estatísticas.
-
-Mostra o progresso do aluno em número de questões respondidas e percentual de acertos.
-
-<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/f316bcd8-8c57-483a-b554-0b9f38b0a7c6" />
-
 Tela de Busca de Instrutores
 
 Pesquisa instrutores por cidade/UF e categoria de habilitação.
 
 Filtros: ordenar por avaliação e mostrar apenas instrutores que aceitam CNH Social.
 
+
+<img width="800" height="500" alt="image" src="https://github.com/user-attachments/assets/f316bcd8-8c57-483a-b554-0b9f38b0a7c6" />
 
 
 
