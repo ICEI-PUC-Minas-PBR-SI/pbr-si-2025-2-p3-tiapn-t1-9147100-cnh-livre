@@ -1,7 +1,7 @@
 
 
 
-## 3.3.1 Processo 3 – Cadastro de Usuario
+## 1.1.1 Processo 1 – Cadastro de Usuario
 
 Atualmente, muitos candidatos que desejam iniciar o processo de obtenção da CNH enfrentam dificuldades burocráticas no cadastro em autoescolas tradicionais. O CNH Livre simplifica esse processo oferecendo um cadastro rápido e intuitivo totalmente online. O aluno acessa o sistema, preenche informações básicas e já pode começar a usar a plataforma para buscar instrutores e agendar aulas. 
  
