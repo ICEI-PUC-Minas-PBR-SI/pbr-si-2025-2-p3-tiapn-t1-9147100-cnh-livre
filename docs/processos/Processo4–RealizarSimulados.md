@@ -1,4 +1,4 @@
-## 3.3.1 Processo 5 – Realizar Simulados 
+## 3.3.1 Processo 4 – Realizar Simulados 
 
 O CNH Livre oferece uma plataforma de simulados para que os alunos possam testar seus conhecimentos sobre legislação de trânsito, direção defensiva e outros temas relevantes para a prova teórica do DETRAN. O sistema oferece diferentes modalidades de simulado com feedback imediato e relatório de desempenho. 
 O aluno acessa o sistema através da URL. O aluno clica no botão “Entrar". O aluno preenche os com informações pessoais para realizar o login. O sistema valida os dados informados. Caso todos os campos estejam corretos, o aluno é redirecionado para a área logada. Aluno logado acessa a seção "Simulados". O aluno Escolhe o tipo de simulado desejado. O aluno responde as questões uma por uma. O aluno recebe feedback imediato após cada questão. Ao final,o aluno visualiza o resultado completo. 
