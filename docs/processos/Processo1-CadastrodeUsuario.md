@@ -19,10 +19,12 @@ O aluno acessa o sistema através da URL. O aluno clica no botão "Sou Aluno". O
 | Campo | Tipo      | Restrições     | Valor default                                |
 | ----- | --------- | -------------- | -------------------------------------------- |
 | URL   | Navegador | Acesso via web | [https://cnhlivre.com](https://cnhlivre.com) |
+## Comandos
 | Elemento              | Ação   | Destino            | Tipo        |
 | --------------------- | ------ | ------------------ | ----------- |
 | Botão "Sou Aluno"     | Clique | Tela de cadastro   | default     |
 | Botão "Sou Instrutor" | Clique | Cadastro instrutor | alternativo |
+
 
 <img width="1139" height="797" alt="image" src="https://github.com/user-attachments/assets/cd91827b-3b70-4d4f-8b0b-ea28027de987" />
 
@@ -37,9 +39,11 @@ O aluno acessa o sistema através da URL. O aluno clica no botão "Sou Aluno". O
 | Senha              | Caixa de texto | Mínimo 8 caracteres              | —             |
 | Cidade             | Caixa de texto | Obrigatório                      | —             |
 | Categoria Desejada | Seleção única  | A, B, C, D, AB                   | B             |
-| Nome do botão | Destino        | Tipo    | Comportamento                |
-| ------------- | -------------- | ------- | ---------------------------- |
-| Criar Conta   | Área do aluno  | default | Valida campos antes de criar |
+## Comando
+| Elemento    | Ação   | Destino       | Tipo    | Comportamento                |
+| ----------- | ------ | ------------- | ------- | ---------------------------- |
+| Criar Conta | Clique | Área do aluno | default | Valida campos antes de criar |
+
 <img width="1137" height="779" alt="image" src="https://github.com/user-attachments/assets/b3eb4b28-c558-4c04-874d-23a063d66362" />
 
 ## Atividade 3 – Validação do Sistema
@@ -50,12 +54,14 @@ O aluno acessa o sistema através da URL. O aluno clica no botão "Sou Aluno". O
 | Email inválido | Validação | Formato e domínio      | Exibe alerta "E-mail inválido"          |
 | Senha fraca    | Validação | Mínimo 8 caracteres    | Exibe alerta "Senha muito curta"        |
 
-## Atividade 4 – Confirmação de Cadastro
+## Atividade 4 – Confirmação de Cadastro (AUTOMATIZADA)
 | Campo              | Tipo     | Restrições   | Valor default |
 | ------------------ | -------- | ------------ | ------------- |
 | Status do cadastro | Mensagem | Sucesso/Erro | —             |
-| Elemento         | Ação     | Destino     | Condição        |
-| ---------------- | -------- | ----------- | --------------- |
-| Mensagem sucesso | Exibição | Área logada | Cadastro válido |
-| Mensagem erro    | Exibição | Formulário  | Dados inválidos |
-| Botão "OK"       | Clique   | Dashboard   | Após sucesso    |
+
+| Ação do Sistema              | Destino     | Condição        |
+| ---------------------------- | ----------- | --------------- |
+| Exibir mensagem de sucesso   | Área logada | Cadastro válido |
+| Exibir mensagem de erro      | Formulário  | Dados inválidos |
+| Redirecionar automaticamente | Dashboard   | Após sucesso    |
+
