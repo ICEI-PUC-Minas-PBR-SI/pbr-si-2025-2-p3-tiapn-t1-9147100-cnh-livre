@@ -50,6 +50,7 @@ O processo finaliza com a visualização ou exportação do progresso.
 | Nome do botão | Destino              | Tipo    |
 | ------------- | -------------------- | ------- |
 | Voltar        | Tela inicial aluno   | cancel  |
+<img width="1568" height="887" alt="image" src="https://github.com/user-attachments/assets/12bccdd5-4c47-49e0-a63c-14ac2c5a5d87" />
 
 
 
