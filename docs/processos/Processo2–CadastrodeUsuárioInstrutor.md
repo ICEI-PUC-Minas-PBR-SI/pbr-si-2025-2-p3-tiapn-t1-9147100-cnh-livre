@@ -18,10 +18,12 @@ O CNH Livre oferece uma plataforma para instrutores de autoescola se cadastrarem
 | Campo | Tipo      | Restrições     | Valor default                                |
 | ----- | --------- | -------------- | -------------------------------------------- |
 | URL   | Navegador | Acesso via web | [https://cnhlivre.com](https://cnhlivre.com) |
+## comandos
 | Elemento              | Ação   | Destino                    | Tipo        |
 | --------------------- | ------ | -------------------------- | ----------- |
 | Botão "Sou Instrutor" | Clique | Tela de cadastro instrutor | default     |
 | Botão "Sou Aluno"     | Clique | Cadastro aluno             | alternativo |
+
  <img width="1138" height="819" alt="image" src="https://github.com/user-attachments/assets/f4d2bebf-fb9e-48e4-b712-19e107b41a22" />
 
  
@@ -48,10 +50,12 @@ O CNH Livre oferece uma plataforma para instrutores de autoescola se cadastrarem
 | Credenciamento DETRAN    | Upload arquivo | PDF, JPG, PNG (max 5MB) | —             |
 | Certificado de Instrutor | Upload arquivo | PDF, JPG, PNG (max 5MB) | —             |
 | Foto Profissional        | Upload arquivo | JPG, PNG (max 2MB)      | —             |
-| Nome do botão     | Destino       | Tipo      | Comportamento     |
-| ----------------- | ------------- | --------- | ----------------- |
-| Enviar Documentos | Validação     | default   | Verifica arquivos |
-| Pular Etapa       | Próxima etapa | secondary | Upload opcional   |
+
+## Comandos
+| Elemento          | Ação   | Destino       | Tipo    | Comportamento        |
+| ----------------- | ------ | ------------- | ------- | -------------------- |
+| Enviar Documentos | Clique | Validação     | default | Verifica arquivos    |
+| Avançar           | Clique | Configurações | default | Prossegue após envio |
 
  
  
@@ -64,9 +68,9 @@ O CNH Livre oferece uma plataforma para instrutores de autoescola se cadastrarem
 | Raio de Atendimento (km) | Número           | 5-50 km             | 20            |
 | Veículo Próprio?         | Checkbox         | Sim/Não             | Sim           |
 | Nome do botão      | Destino    | Tipo    | Comportamento   |
-| ------------------ | ---------- | ------- | --------------- |
-| Finalizar Cadastro | Análise    | primary | Valida tudo     |
-| Voltar             | Documentos | cancel  | Editar anterior |
+| Elemento           | Ação   | Destino    | Tipo    | Comportamento          |
+## comandos
+| Finalizar Cadastro | Clique | Análise    | primary | Valida informações     |
 
  
 ## Atividade 5 - Validação do Sistema 
@@ -79,12 +83,12 @@ O CNH Livre oferece uma plataforma para instrutores de autoescola se cadastrarem
 | Preço muito baixo       | Validação | Mínimo R$ 50,00        | Exibe alerta "Preço mínimo é R$ 50,00"               |
 
  
-## Atividade 6 - Confirmação de Cadastro 
+## Atividade 6 - Confirmação de Cadastro (AUTOMATIZADA)
 | Campo              | Tipo     | Restrições                  | Valor default |
 | ------------------ | -------- | --------------------------- | ------------- |
 | Status do cadastro | Mensagem | Em análise / Sucesso / Erro | Em análise    |
-| Elemento              | Ação       | Destino            | Condição         |
-| --------------------- | ---------- | ------------------ | ---------------- |
-| Mensagem "Em análise" | Exibição   | Dashboard limitado | Cadastro enviado |
-| Tempo estimado        | Informação | —                  | 2-3 dias úteis   |
-| Botão "OK"            | Clique     | Área restrita      | Após submissão   |
+| Ação do Sistema               | Destino            | Condição          |
+| ----------------------------- | ------------------ | ----------------- |
+| Exibir mensagem “Em análise”  | Dashboard limitado | Cadastro enviado  |
+| Mostrar tempo estimado        | Informação interna | 2–3 dias úteis    |
+| Enviar notificação por e-mail | Caixa do instrutor | Cadastro recebido |
