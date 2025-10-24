@@ -1,4 +1,4 @@
-## 3.3.1 Processo 4 – Cadastro de Usuário Instrutor 
+## 3.3.1 Processo 2 – Cadastro de Usuário Instrutor 
 
 O CNH Livre oferece uma plataforma para instrutores de autoescola se cadastrarem e oferecerem seus serviços de forma digital. O processo de cadastro do instrutor é mais completo que o do aluno, pois requer documentação profissional comprobatória e informações específicas sobre a atividade de ensino. 
  
