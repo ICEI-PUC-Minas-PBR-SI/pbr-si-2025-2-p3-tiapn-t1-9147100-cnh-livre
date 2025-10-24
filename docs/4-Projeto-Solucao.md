@@ -76,93 +76,170 @@ As classes se relacionam por associações, representando cadastros, aulas agend
 
 ## 4.3. Modelo de dados
 
-O desenvolvimento da solução proposta requer a existência de bases de dados que permitam efetuar os cadastros de dados e controles associados aos processos identificados, assim como recuperações.
-Utilizando a notação do DER (Diagrama Entidade e Relacionamento), elaborem um modelo, na ferramenta visual indicada na disciplina, que contemple todas as entidades e atributos associados às atividades dos processos identificados. Deve ser gerado um único DER que suporte todos os processos escolhidos, visando, assim, uma base de dados integrada. O modelo deve contemplar, também, o controle de acesso de usuários (partes interessadas dos processos) de acordo com os papéis definidos nos modelos do processo de negócio.
-_Apresente o modelo de dados por meio de um modelo relacional que contemple todos os conceitos e atributos apresentados na modelagem dos processos._
+O desenvolvimento da solução proposta exige uma base de dados robusta que permita realizar os cadastros, controles e consultas relacionadas aos processos identificados no sistema CNH Livre, como o cadastro de usuários, agendamento de aulas, simulados e feedbacks.
+
+O modelo de dados foi construído utilizando a notação DER (Diagrama Entidade-Relacionamento) na ferramenta MySQL Workbench, contemplando todas as entidades e atributos necessários.
+
+A estrutura foi organizada de forma integrada, permitindo que os módulos (Cadastro, Aulas, Simulados, Avaliações e Comunicação) compartilhem informações de forma eficiente e segura.
+
+Além disso, o modelo contempla o controle de acesso de usuários, diferenciando alunos, instrutores e administradores conforme seus papéis no sistema.
 
 #### 4.3.1 Modelo ER
 
-4.3.1 Modelo ER
-
 Entidades principais e seus relacionamentos:
 
-Usuário (Aluno/Instrutor)
+Usuários: Armazena informações básicas de acesso e identificação.
 
-Aula (Agendamento)
+Alunos: Contém dados complementares do aluno e sua categoria de habilitação.
 
-Simulado
+Instrutores: Registra informações profissionais, como credenciamento e avaliação.
 
-Questão
+Veículos: Vinculados a instrutores, com dados de categoria e disponibilidade.
 
-Resultado
+Aulas: Representa o agendamento de aulas entre alunos e instrutores.
+
+Pagamentos: Controla as transações financeiras das aulas.
+
+Avaliações: Permite que alunos avaliem as aulas e os instrutores.
+
+Simulados: Controla a realização de simulados pelos alunos.
+
+Questões e Alternativas: Base de perguntas e respostas para os simulados.
+
+Mensagens: Sistema de comunicação interna entre usuários.
+
+Documentos: Armazena documentos enviados pelos usuários para verificação.
+
+O DER representa todas essas entidades e seus relacionamentos, garantindo integridade referencial e suporte a todos os processos da aplicação.
 
 #### 4.3.2 Esquema Relacional
 
-Representação em tabelas:
+A seguir, o modelo relacional com as principais tabelas e seus atributos:
 
-Usuario (UsuarioID PK, Nome, Email, Senha, Tipo)
-
-Instrutor (InstrutorID PK, Nome, Categoria, Cidade, Avaliacao)
-
-Aluno (AlunoID PK, Nome, CPF, Cidade, CategoriaCNH)
-
-Aula (AulaID PK, Data, Status, AlunoID FK, InstrutorID FK)
-
-Simulado (SimuladoID PK, Tipo, Resultado, AlunoID FK)
-
-Questao (QuestaoID PK, Enunciado, Alternativas, RespostaCorreta)
+Tabela	Campos Principais
+usuarios	id PK, email, senha_hash, nome_completo, cpf, telefone, tipo, data_cadastro, ativo
+alunos	id PK, usuario_id FK, data_nascimento, cnh_categoria_desejada, cidade, estado, endereco, cnh_aprovada, data_aprovacao
+instrutores	id PK, usuario_id FK, bio, preco_aula, categorias_ensina, avaliacao_media, total_avaliacoes, aceita_cnh_social, verificado, credenciamento_detran, data_credenciamento
+veiculos	id PK, instrutor_id FK, placa, modelo, ano, categoria, cor, foto_url, disponivel
+aulas	id PK, aluno_id FK, instrutor_id FK, veiculo_id FK, data_aula, hora_inicio, hora_fim, preco, status, local_encontro, observacoes
+pagamentos	id PK, aula_id FK, metodo, valor, status, codigo_transacao, data_pagamento, data_confirmacao
+avaliacoes	id PK, aula_id FK, aluno_id FK, instrutor_id FK, nota, comentario, data_avaliacao, anonima
+questoes	id PK, enunciado, categoria, dificuldade, imagem_url, explicacao, ativa
+alternativas	id PK, questao_id FK, texto, correta, letra
+simulados	id PK, aluno_id FK, tipo, categoria, total_questoes, acertos, erros, percentual_acerto, tempo_total_segundos, data_realizacao
+respostas_simulado	id PK, simulado_id FK, questao_id FK, alternativa_escolhida, correta, tempo_resposta_segundos, pulou
+mensagens	id PK, remetente_id FK, destinatario_id FK, conteudo, lida, tipo, data_envio
+documentos	id PK, usuario_id FK, tipo, arquivo_url, aprovado, data_upload, data_aprovacao
 
 
 #### 4.3.3 Modelo Físico
 
 ```sql
-CREATE TABLE Usuario (
-    UsuarioID INT PRIMARY KEY AUTO_INCREMENT,
-    Nome VARCHAR(100) NOT NULL,
-    Email VARCHAR(100) UNIQUE NOT NULL,
-    Senha VARCHAR(100) NOT NULL,
-    Tipo ENUM('Aluno','Instrutor','Admin')
+CREATE TABLE usuarios (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    email VARCHAR(255) UNIQUE NOT NULL,
+    senha_hash VARCHAR(255) NOT NULL,
+    nome_completo VARCHAR(255) NOT NULL,
+    cpf VARCHAR(14) UNIQUE NOT NULL,
+    telefone VARCHAR(20),
+    foto_url TEXT,
+    tipo ENUM('aluno', 'instrutor', 'administrador') NOT NULL,
+    data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    ativo BOOLEAN DEFAULT TRUE
 );
 
-CREATE TABLE Instrutor (
-    InstrutorID INT PRIMARY KEY AUTO_INCREMENT,
-    Nome VARCHAR(100) NOT NULL,
-    Categoria CHAR(1) NOT NULL,
-    Cidade VARCHAR(100),
-    Avaliacao DECIMAL(2,1)
+CREATE TABLE alunos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    usuario_id INT NOT NULL,
+    data_nascimento DATE,
+    cnh_categoria_desejada ENUM('A', 'B', 'C', 'D', 'AB') DEFAULT 'B',
+    cnh_social BOOLEAN DEFAULT FALSE,
+    cidade VARCHAR(100),
+    estado CHAR(2),
+    endereco TEXT,
+    cnh_aprovada BOOLEAN DEFAULT FALSE,
+    data_aprovacao DATE NULL,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
 );
 
-CREATE TABLE Aluno (
-    AlunoID INT PRIMARY KEY AUTO_INCREMENT,
-    Nome VARCHAR(100) NOT NULL,
-    CPF VARCHAR(14) UNIQUE NOT NULL,
-    Cidade VARCHAR(100),
-    CategoriaCNH CHAR(1)
+CREATE TABLE instrutores (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    usuario_id INT NOT NULL,
+    bio TEXT,
+    preco_aula DECIMAL(10,2) DEFAULT 70.00,
+    categorias_ensina JSON,
+    avaliacao_media DECIMAL(3,2) DEFAULT 4.5,
+    total_avaliacoes INT DEFAULT 0,
+    aceita_cnh_social BOOLEAN DEFAULT FALSE,
+    verificado BOOLEAN DEFAULT FALSE,
+    credenciamento_detran VARCHAR(100),
+    data_credenciamento DATE,
+    FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
 );
 
-CREATE TABLE Aula (
-    AulaID INT PRIMARY KEY AUTO_INCREMENT,
-    Data DATE NOT NULL,
-    Status VARCHAR(50),
-    AlunoID INT,
-    InstrutorID INT,
-    FOREIGN KEY (AlunoID) REFERENCES Aluno(AlunoID),
-    FOREIGN KEY (InstrutorID) REFERENCES Instrutor(InstrutorID)
+CREATE TABLE veiculos (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    instrutor_id INT NOT NULL,
+    placa VARCHAR(10) UNIQUE,
+    modelo VARCHAR(100),
+    ano INT,
+    categoria VARCHAR(2),
+    cor VARCHAR(50),
+    foto_url TEXT,
+    disponivel BOOLEAN DEFAULT TRUE,
+    FOREIGN KEY (instrutor_id) REFERENCES instrutores(id)
 );
 
-CREATE TABLE Simulado (
-    SimuladoID INT PRIMARY KEY AUTO_INCREMENT,
-    Tipo VARCHAR(50),
-    Resultado INT,
-    AlunoID INT,
-    FOREIGN KEY (AlunoID) REFERENCES Aluno(AlunoID)
+CREATE TABLE aulas (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    aluno_id INT NOT NULL,
+    instrutor_id INT NOT NULL,
+    veiculo_id INT NULL,
+    data_aula DATE NOT NULL,
+    hora_inicio TIME NOT NULL,
+    hora_fim TIME NOT NULL,
+    preco DECIMAL(10,2),
+    status ENUM('agendada', 'confirmada', 'em_andamento', 'concluida', 'cancelada', 'reagendada') DEFAULT 'agendada',
+    local_encontro TEXT,
+    observacoes TEXT,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (aluno_id) REFERENCES alunos(id),
+    FOREIGN KEY (instrutor_id) REFERENCES instrutores(id),
+    FOREIGN KEY (veiculo_id) REFERENCES veiculos(id)
 );
 
-CREATE TABLE Questao (
-    QuestaoID INT PRIMARY KEY AUTO_INCREMENT,
-    Enunciado TEXT NOT NULL,
-    Alternativas TEXT,
-    RespostaCorreta CHAR(1)
+CREATE TABLE simulados (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    aluno_id INT NOT NULL,
+    tipo ENUM('completo', 'categoria', 'treino'),
+    categoria VARCHAR(100),
+    total_questoes INT,
+    acertos INT,
+    erros INT,
+    percentual_acerto DECIMAL(5,2),
+    tempo_total_segundos INT,
+    data_realizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY (aluno_id) REFERENCES alunos(id)
+);
+
+CREATE TABLE questoes (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    enunciado TEXT NOT NULL,
+    categoria ENUM('legislacao','sinalizacao','direcao_defensiva','primeiros_socorros','meio_ambiente','mecanica'),
+    dificuldade ENUM('facil','medio','dificil'),
+    imagem_url TEXT,
+    explicacao TEXT,
+    ativa BOOLEAN DEFAULT TRUE,
+    data_criacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE alternativas (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    questao_id INT NOT NULL,
+    texto TEXT NOT NULL,
+    correta BOOLEAN DEFAULT FALSE,
+    letra CHAR(1) NOT NULL,
+    FOREIGN KEY (questao_id) REFERENCES questoes(id)
 );
 ```
 
@@ -175,7 +252,7 @@ A implementação utilizará tecnologias modernas e acessíveis:
 | ---            | ---             |
 | SGBD           | MySQL           |
 | Front end      | HTML+CSS+JS     |
-| Back end       | Java SpringBoot |
+| Back end       | Node, PHP       |
 | Deploy         | Github Pages    |
 | IDE            | VS Code         |
 | Modelagem      | Draw.io / Figm  |
