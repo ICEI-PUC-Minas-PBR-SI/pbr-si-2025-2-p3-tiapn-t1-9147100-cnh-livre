@@ -40,7 +40,6 @@ O aluno acessa o sistema através da URL. O aluno clica no botão "Sou Aluno". O
 | Nome do botão | Destino        | Tipo    | Comportamento                |
 | ------------- | -------------- | ------- | ---------------------------- |
 | Criar Conta   | Área do aluno  | default | Valida campos antes de criar |
-| Cancelar      | Página inicial | cancel  | Limpa formulário             |
 <img width="1137" height="779" alt="image" src="https://github.com/user-attachments/assets/b3eb4b28-c558-4c04-874d-23a063d66362" />
 
 ## Atividade 3 – Validação do Sistema
