@@ -49,7 +49,6 @@ O CNH Livre oferece uma plataforma para instrutores de autoescola se cadastrarem
 | CNH (Frente e Verso)     | Upload arquivo | PDF, JPG, PNG (max 5MB) | —             |
 | Credenciamento DETRAN    | Upload arquivo | PDF, JPG, PNG (max 5MB) | —             |
 | Certificado de Instrutor | Upload arquivo | PDF, JPG, PNG (max 5MB) | —             |
-| Foto Profissional        | Upload arquivo | JPG, PNG (max 2MB)      | —             |
 
 ## Comandos
 | Elemento          | Ação   | Destino       | Tipo    | Comportamento        |
