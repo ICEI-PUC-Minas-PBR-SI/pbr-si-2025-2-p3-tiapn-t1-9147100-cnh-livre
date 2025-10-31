@@ -40,15 +40,13 @@ O CNH Livre oferece uma plataforma para instrutores de autoescola se cadastrarem
 | Preço por Aula (R$)      | Número decimal   | Mínimo R$ 50,00                  | 70,00         |
 | Experiência Profissional | Área de texto    | Máximo 500 caracteres            | —             |
 | Biografia                | Área de texto    | Máximo 1000 caracteres           | —             |
-<img width="1157" height="796" alt="image" src="https://github.com/user-attachments/assets/f7fb97df-a571-4a39-8995-c4a48ae47992" />
 
- 
-## Atividade 3 – Upload de Documentos 
-| Campo                    | Tipo           | Restrições              | Valor default |
+| COMANDO                    | Tipo           | Restrições              | Valor default |
 | ------------------------ | -------------- | ----------------------- | ------------- |
 | CNH (Frente e Verso)     | Upload arquivo | PDF, JPG, PNG (max 5MB) | —             |
 | Credenciamento DETRAN    | Upload arquivo | PDF, JPG, PNG (max 5MB) | —             |
 | Certificado de Instrutor | Upload arquivo | PDF, JPG, PNG (max 5MB) | —             |
+<img width="1157" height="796" alt="image" src="https://github.com/user-attachments/assets/f7fb97df-a571-4a39-8995-c4a48ae47992" />
 
 ## Comandos
 | Elemento          | Ação   | Destino       | Tipo    | Comportamento        |
