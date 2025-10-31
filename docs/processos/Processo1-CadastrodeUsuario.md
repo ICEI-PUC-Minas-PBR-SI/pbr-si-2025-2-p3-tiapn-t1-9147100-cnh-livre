@@ -46,22 +46,8 @@ O aluno acessa o sistema através da URL. O aluno clica no botão "Sou Aluno". O
 
 <img width="1137" height="779" alt="image" src="https://github.com/user-attachments/assets/b3eb4b28-c558-4c04-874d-23a063d66362" />
 
-## Atividade 3 – Validação do Sistema
-| Campo          | Tipo      | Restrições             | Ação do sistema                         |
-| -------------- | --------- | ---------------------- | --------------------------------------- |
-| Campos vazios  | Validação | Verifica preenchimento | Exibe alerta "Preencha todos os campos" |
-| CPF inválido   | Validação | Formato e dígitos      | Exibe alerta "CPF inválido"             |
-| Email inválido | Validação | Formato e domínio      | Exibe alerta "E-mail inválido"          |
-| Senha fraca    | Validação | Mínimo 8 caracteres    | Exibe alerta "Senha muito curta"        |
 
-## Atividade 4 – Confirmação de Cadastro (AUTOMATIZADA)
-| Campo              | Tipo     | Restrições   | Valor default |
-| ------------------ | -------- | ------------ | ------------- |
-| Status do cadastro | Mensagem | Sucesso/Erro | —             |
 
-| Ação do Sistema              | Destino     | Condição        |
-| ---------------------------- | ----------- | --------------- |
-| Exibir mensagem de sucesso   | Área logada | Cadastro válido |
-| Exibir mensagem de erro      | Formulário  | Dados inválidos |
-| Redirecionar automaticamente | Dashboard   | Após sucesso    |
+
+
 
