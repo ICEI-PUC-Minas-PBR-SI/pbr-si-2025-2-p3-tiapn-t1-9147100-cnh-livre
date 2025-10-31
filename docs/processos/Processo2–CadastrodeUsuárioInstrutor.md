@@ -72,22 +72,4 @@ O CNH Livre oferece uma plataforma para instrutores de autoescola se cadastrarem
 | Finalizar Cadastro | Clique | Análise    | primary | Valida informações     |
 
  
-## Atividade 5 - Validação do Sistema 
-| Campo                   | Tipo      | Restrições             | Ação do sistema                                      |
-| ----------------------- | --------- | ---------------------- | ---------------------------------------------------- |
-| Campos obrigatórios     | Validação | Verifica preenchimento | Exibe alerta "Preencha todos os campos obrigatórios" |
-| CPF inválido            | Validação | Formato e dígitos      | Exibe alerta "CPF inválido"                          |
-| Email inválido          | Validação | Formato e domínio      | Exibe alerta "E-mail inválido"                       |
-| Credenciamento inválido | Validação | Formato DETRAN         | Exibe alerta "Número de credenciamento inválido"     |
-| Preço muito baixo       | Validação | Mínimo R$ 50,00        | Exibe alerta "Preço mínimo é R$ 50,00"               |
 
- 
-## Atividade 6 - Confirmação de Cadastro (AUTOMATIZADA)
-| Campo              | Tipo     | Restrições                  | Valor default |
-| ------------------ | -------- | --------------------------- | ------------- |
-| Status do cadastro | Mensagem | Em análise / Sucesso / Erro | Em análise    |
-| Ação do Sistema               | Destino            | Condição          |
-| ----------------------------- | ------------------ | ----------------- |
-| Exibir mensagem “Em análise”  | Dashboard limitado | Cadastro enviado  |
-| Mostrar tempo estimado        | Informação interna | 2–3 dias úteis    |
-| Enviar notificação por e-mail | Caixa do instrutor | Cadastro recebido |
