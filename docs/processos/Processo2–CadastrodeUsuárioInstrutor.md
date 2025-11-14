@@ -21,8 +21,8 @@ O CNH Livre oferece uma plataforma para instrutores de autoescola se cadastrarem
 ## comandos
 | Elemento              | Ação   | Destino                    | Tipo        |
 | --------------------- | ------ | -------------------------- | ----------- |
-| Botão "Sou Instrutor" | Clique | Tela de cadastro instrutor | default     |
-| Botão "Sou Aluno"     | Clique | Cadastro aluno             | alternativo |
+| Botão "Sou Instrutor" | Clique | Tela de cadastro instrutor | default    Usuário |
+| Botão "Sou Aluno"     | Clique | Cadastro aluno             | alternativo Usuário |
 
  <img width="1138" height="819" alt="image" src="https://github.com/user-attachments/assets/f4d2bebf-fb9e-48e4-b712-19e107b41a22" />
 
