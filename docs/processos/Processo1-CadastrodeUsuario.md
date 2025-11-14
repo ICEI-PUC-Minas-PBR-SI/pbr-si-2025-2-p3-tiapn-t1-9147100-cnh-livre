@@ -22,8 +22,8 @@ O aluno acessa o sistema através da URL. O aluno clica no botão "Sou Aluno". O
 ## Comandos
 | Elemento              | Ação   | Destino            | Tipo        |
 | --------------------- | ------ | ------------------ | ----------- |
-| Botão "Sou Aluno"     | Clique | Tela de cadastro   | default     |
-| Botão "Sou Instrutor" | Clique | Cadastro instrutor | alternativo |
+| Botão "Sou Aluno"     | Clique | Tela de cadastro   | default   Usuário  |
+| Botão "Sou Instrutor" | Clique | Cadastro instrutor | alternativo Usuário|
 
 
 <img width="1139" height="797" alt="image" src="https://github.com/user-attachments/assets/cd91827b-3b70-4d4f-8b0b-ea28027de987" />
