@@ -113,6 +113,7 @@ Documentos: Armazena documentos enviados pelos usuários para verificação.
 O DER representa todas essas entidades e seus relacionamentos, garantindo integridade referencial e suporte a todos os processos da aplicação.
 
 #### 4.3.2 Esquema Relacional
+![WhatsApp Image 2025-11-14 at 19 21 28](https://github.com/user-attachments/assets/3e779ffe-0351-44bd-b20b-52abca86b336)
 
 A seguir, o modelo relacional com as principais tabelas e seus atributos:
 
