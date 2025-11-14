@@ -9,10 +9,11 @@ O aluno acessa o sistema através da URL. O aluno clica no botão "Sou Aluno". O
  
 
 
+<img width="1267" height="851" alt="Diagrama sem nome drawio (4)" src="https://github.com/user-attachments/assets/0b06ef12-7807-4e76-8fd4-987129200799" />
 
 
 
-<img width="1273" height="812" alt="Diagrama sem nome drawio (2)" src="https://github.com/user-attachments/assets/03b03e4c-64fe-4707-a6cc-d836677cd5bb" />
+
 
 ## Detalhamento das Atividades
 ## Atividade 1 – Acesso ao Sistema
