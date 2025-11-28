@@ -111,6 +111,12 @@ Atualizado em: 28/11/2025
 Atualizado em: 28/11/2025}
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
 | :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
+|  Lucas Gabriel de Castro, Eric Alixandre Gi e FelipeAMGoncalves    | Relatório - seção "Modelagem dos processos - Processo 3        | 10/10/2025     | 21/11/2025 | ✔️    | 21/11/2025 |
+|  Lucas Gabriel de Castro, Rodrigo Goulart de Paula  e  Lucas de Souza Sá   | Relatório - seção "Modelo de dados"        | 10/10/2025     | 21/11/2025 | ✔️    | 21/11/2025 |
+|  Lucas Gabriel de Castro, Rodrigo Goulart de Paula  e Eric Alixandre Gi    | Implementação completa do processo 3,4 e 5        | 10/10/2025     | 21/11/2025 | ✔️    | 21/11/2025 |
+|  FelipeAMGoncalves, Joao Vitor Barros Cabral  e Eric Alixandre Gi    | Relatório - seção "Indicadores de desempenho"        | 10/10/2025     | 21/11/2025 | ✔️    | 21/11/2025 |
+|  Lucas Gabriel de Castro, Rodrigo Goulart de Paula  e Eric Alixandre Gi   | Relatório - seção "Modelagem dos processos - Processo 5        | 10/10/2025     | 21/11/2025 | ✔️    | 21/11/2025 |
+|  Lucas Gabriel de Castro, FelipeAMGoncalves, Joao Vitor Barros Cabral    e Lucas de Souza Sá   | Relatório - seção "Modelagem dos processos - Processo 4        | 10/10/2025     | 21/11/2025 | ✔️    | 21/11/2025 |
 
 
 
