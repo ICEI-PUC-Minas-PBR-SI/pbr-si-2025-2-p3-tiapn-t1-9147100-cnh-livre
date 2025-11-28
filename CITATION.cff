@@ -3,27 +3,27 @@ message: "Por favor cite este software usando os metadados abaixo."
 title: "CNH Livre — pbr-si-2025-2-p3-tiapn-t1-9147100-cnh-livre"
 authors:
   - given-names: "Eric"
-    family-names: "Gil"
+    family-names: "Alixandre Gil"
     affiliation:
       - name: "PUC Minas"
-  - given-names: "Lucas"
-    family-names: "Castro"
+  - given-names: "Lucas Gabriel"
+    family-names: "de Castro Rodrigues"
     affiliation:
       - name: "PUC Minas"
-  - given-names: "João"
-    family-names: "Barros"
+  - given-names: "João Vitor"
+    family-names: "Barros Cabral"
     affiliation:
       - name: "PUC Minas"
   - given-names: "Rodrigo"
-    family-names: "Goulart"
+    family-names: "Goulart de Paula"
     affiliation:
       - name: "PUC Minas"
   - given-names: "Lucas"
-    family-names: "Souza"
+    family-names: "de Souza Sá"
     affiliation:
       - name: "PUC Minas"
   - given-names: "Felipe"
-    family-names: "Augusto"
+    family-names: "Mendes Augusto"
     affiliation:
       - name: "PUC Minas"
 repository-code: "https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-2025-2-p3-tiapn-t1-9147100-cnh-livre"
