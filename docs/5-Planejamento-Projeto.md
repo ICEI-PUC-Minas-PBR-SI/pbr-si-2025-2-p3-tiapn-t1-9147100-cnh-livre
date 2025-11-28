@@ -33,6 +33,20 @@ Atualizado em: 28/11/2025
 | Rodrigo Goulart de Paula, Eric Alixandre Gil e Lucas de Souza Sá  | Relatório - seção 2  |  09/09/2025    | 19/09/2025 | ✔️    |   12/09/2025       |
 | Rodrigo Goulart de Paula, Eric Alixandre Gil, Lucas de Souza Sá, Lucas Gabriel de Castro, Eric Alixandre Gil e Joao Vitor Barros Cabral   | front-end do processo 1  |  09/09/2025    | 19/09/2025 | ✔️    |   12/09/2025       |
 
+## Sprint 3
+
+Atualizado em: 28/11/2025
+| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
+|  FelipeAMGoncalves      | Relatório – Processo 3        | 01/10/2025     | 10/10/2025 | ✔️    | 03/10/2025 |
+| FelipeAMGoncalves, Rodrigo Goulart de Paula e Lucas Gabriel de Castro     | Detalhar campos e comandos do Processo 3        | 01/10/2025     | 10/10/2025 | ✔️    | 03/10/2025 |
+| Eric Alixandre Gil,  Lucas de Souza Sá e Joao Vitor Barros Cabral     | Criar Wireframes do Processo 3        | 01/10/2025     | 10/10/2025 | ✔️    | 03/10/2025 |
+|  Lucas Gabriel de Castro   | Modelar Processo 3 em BPMN       | 01/10/2025     | 10/10/2025 | ✔️    | 03/10/2025 |
+|  Joao Vitor Barros Cabral   | Atualizar modelagem do Processo 2       | 01/10/2025     | 10/10/2025 | ✔️    | 03/10/2025 |
+|  Lucas de Souza Sá  | Criar Wireframes do Processo 2       | 01/10/2025     | 10/10/2025 | ✔️    | 03/10/2025 |
+|  Rodrigo Goulart de Paula  | Detalhar campos e comandos do Processo 2       | 01/10/2025     | 10/10/2025 | ✔️    | 03/10/2025 |
+| Eric Alixandre Gil   | Implementar front-end completo do Processo 2       | 01/10/2025     | 10/10/2025 | ✔️    | 03/10/2025 |
+
 Legenda:
 - ✔️: terminado
 - 📝: em execução
