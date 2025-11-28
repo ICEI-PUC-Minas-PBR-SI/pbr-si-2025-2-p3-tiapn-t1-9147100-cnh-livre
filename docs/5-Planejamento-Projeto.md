@@ -2,7 +2,6 @@
 
 ## 5.1. Divisão de Papéis
 
-> Apresente a divisão de tarefas entre os membros do grupo e o acompanhamento da execução, conforme exemplo abaixo.
 
 ## Sprint 1
 
