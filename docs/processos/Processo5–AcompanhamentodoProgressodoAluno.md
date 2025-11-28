@@ -3,7 +3,7 @@
 
 ## 3.3.2 Processo 5 – Acompanhamento do Progresso do Aluno
 
-Atualmente, os alunos enfrentam dificuldade em acompanhar de forma clara quantas aulas já realizaram, quantas ainda faltam, e qual é o seu desempenho em simulados e exames. Muitas vezes precisam entrar em contato com a autoescola ou aguardar retorno do instrutor, o que gera demora.
+Muito alunos enfrentam dificuldade em acompanhar de forma objetiva e clara quantas aulas já realizaram, quantas ainda faltam, e qual é o seu desempenho em simulados e exames. Muitas vezes precisam entrar em contato com a autoescola ou aguardar retorno do instrutor, o que gera demora.
 CNH Livre busca resolver esse problema oferecendo uma área no sistema em que o aluno pode visualizar em tempo real seu progresso, aumentando a transparência no processo de habilitação.
 
 
@@ -13,7 +13,8 @@ O sistema apresenta os dados de aulas, simulados e exames.
 O aluno pode exportar as informações em relatório ou apenas visualizar.
 O processo finaliza com a visualização ou exportação do progresso.
 
-<img width="1405" height="819" alt="image" src="https://github.com/user-attachments/assets/08eec3ce-9f4e-4688-b07c-68b9f3925a99" />
+<img width="1313" height="764" alt="image" src="https://github.com/user-attachments/assets/4f1b2415-d2f4-4ba2-85c7-a25cb5618ffb" />
+
 
 
 
