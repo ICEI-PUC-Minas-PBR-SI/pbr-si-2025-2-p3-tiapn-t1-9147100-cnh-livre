@@ -70,6 +70,12 @@ Atualizado em: 28/11/2025
 |  FelipeAMGoncalves, Lucas de Souza Sá e Joao Vitor Barros Cabral   | Atualizar modelagem BPMN       | 10/10/2025     | 07/11/2025 | ✔️    | 24/10/2025 |
 |  Lucas Gabriel de Castro, Eric Alixandre Gi  e Rodrigo Goulart de Paula   | Criar no banco as tabelas       | 10/10/2025     | 07/11/2025 | ✔️    | 24/10/2025 |
 
+## Sprint 6
+
+Atualizado em: 28/11/2025}
+| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
+
 
 
 
