@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CNH Livre – App</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="barra-ferramentas">
+    <div class="container">
+      <div class="marca"><span class="logo">🚗</span> CNH Livre</div>
+      <nav class="linha texto-pequeno">
+        <a href="#/" class="btn fantasma">Início</a>
+        <a href="#/busca" class="btn fantasma">Instrutores</a>
+        <a href="#/minhas-aulas" class="btn fantasma">Minhas Aulas</a>
+        <a href="#/ead" class="btn fantasma">Teoria (EAD)</a>
+        <a href="#/simulados" class="btn fantasma">Simulados</a>
+        <a href="#/forum" class="btn fantasma">Comunidade</a>
+        <a href="#/docs" class="btn fantasma">Meu Progresso</a>
+      </nav>
+      <div class="espacador"></div>
+      <div id="navUsuario" class="linha texto-pequeno"></div>
+    </div>
+  </header>
+  <main class="container" id="app"></main>
+
+  <!-- Templates -->
+  <template id="tpl-inicio">
+    <div id="telaInicio" class="grade grade-1">
+      <div class="cartao">
+        <div class="cabecalho-cartao">Bem-vindo ao CNH Livre</div>
+        <div class="conteudo-cartao">
+          <h1>Aprenda a dirigir com liberdade e segurança</h1>
+          <p class="texto-suave">Conectamos alunos e instrutores credenciados. Agende aulas práticas e teóricas, faça simulados e acompanhe sua jornada até a CNH.</p>
+          <div class="espaco"></div>
+          <div id="botoesInicio" class="linha">
+            <a href="#/cadastro?perfil=aluno" class="btn primaria">👨‍🎓 Sou Aluno</a>
+            <a href="#/cadastro?perfil=instrutor" class="btn">👨‍🏫 Sou Instrutor</a>
+          </div>
+        </div>
+      </div>
+
+      <div id="secaoLogado" class="escondido" style="display: none;">
+        <div class="cartao">
+          <div class="cabecalho-cartao">📅 Minhas Próximas Aulas</div>
+          <div class="conteudo-cartao">
+            <div id="aulasPrincipais" class="lista"></div>
+          </div>
+        </div>
+        
+        <div class="cartao">
+          <div class="cabecalho-cartao">⚡ Atalhos Rápidos</div>
+          <div class="conteudo-cartao">
+            <div class="linha" style="gap: 10px; flex-wrap: wrap;">
+              <a href="#/busca" class="btn" id="btnAtalho1">🔍 Buscar Instrutores</a>
+              <a href="#/minhas-aulas" class="btn" id="btnAtalho2">📋 Ver Todas as Aulas</a>
+              <a href="#/simulados" class="btn" id="btnAtalho3">📝 Fazer Simulado</a>
+              <a href="#/forum" class="btn" id="btnAtalho4">💬 Comunidade</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="tpl-autenticacao">
+    <div class="grade grade-2">
+      <div class="cartao">
+        <div class="cabecalho-cartao">Criar Conta</div>
+        <div class="conteudo-cartao">
+          <form id="formRegistro" class="grade">
+            <div class="linha"><div class="chip">Perfil: <span id="perfilReg"></span></div></div>
+            <input class="entrada" name="nome" placeholder="Nome completo" required />
+            <input class="entrada" name="cpf" placeholder="CPF" pattern="[0-9\.\-]{11,14}" required />
+            <input class="entrada" name="email" type="email" placeholder="E-mail" required />
+            <input class="entrada" name="senha" type="password" placeholder="Senha" required />
+             <div id="extraAluno" class="grade">
+                        <input class="entrada" name="cidade" placeholder="Cidade/UF*" required />
+                        <select class="seletor" name="categoria" required>
+                            <option value="">Selecione a categoria desejada*</option>
+                            <option value="A">A - Motos</option>
+                            <option value="B" selected>B - Carros</option>
+                            <option value="C">C - Caminhões</option>
+                            <option value="D">D - Ônibus</option>
+                            <option value="AB">AB - Carros e Motos</option>
+                        </select>
+                    </div>
+            <div id="extraInstrutor" class="grade escondido">
+              <input class="entrada" name="bio" placeholder="Bio (ex.: 10 anos de experiência)" />
+              <input class="entrada" name="preco" type="number" step="0.01" placeholder="Preço por aula (R$)" />
+              <div class="linha">
+                <label class="pilula">📄 CNH <input type="file" name="docCnh" required /></label>
+                <label class="pilula">🎓 Certificado Instrutor <input type="file" name="docCert" required /></label>
+                <label class="pilula">🏛️ Credenciamento DETRAN <input type="file" name="docDetran" required /></label>
+              </div>
+              <div class="linha"><label><input type="checkbox" name="aceitaSocial" /> Aceita alunos CNH Social</label></div>
+            </div>
+            <button class="btn primaria" type="submit">Criar conta</button>
+          </form>
+        </div>
+      </div>
+      <div class="cartao">
+        <div class="cabecalho-cartao">Entrar</div>
+        <div class="conteudo-cartao">
+          <form id="formLogin" class="grade">
+            <input class="entrada" name="email" type="email" placeholder="E-mail" required />
+            <input class="entrada" name="senha" type="password" placeholder="Senha" required />
+            <button class="btn" type="submit"><span>Entrar</span> 🔐</button>
+          </form>
+          <div class="divisor"></div>
+          <p class="texto-suave texto-pequeno">Nesta demo não há recuperação de senha. Os dados ficam apenas no seu navegador.</p>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="tpl-busca">
+    <div class="cartao">
+      <div class="cabecalho-cartao">Buscar Instrutores</div>
+      <div class="conteudo-cartao">
+<div class="grade grade-4">
+	          <input id="fLocal" class="entrada" placeholder="Cidade/UF" />
+	          <select id="fCategoria" class="seletor">
+	            <option value="">Categoria</option>
+	            <option>A</option><option selected>B</option><option>C</option><option>D</option>
+	          </select>
+	          <select id="fOrdem" class="seletor">
+	            <option value="avaliacao">Ordenar por: Avaliação</option>
+	            <option value="preco">Menor preço</option>
+	          </select>
+	          <button id="btnBuscarInstrutores" class="btn primaria">Buscar</button>
+	        </div>
+	        
+	        <div class="divisor"></div>
+	        <div id="listaInstrutores" class="lista"></div>
+      </div>
+    </div>
+  </template>
+
+  <template id="tpl-perfil-instrutor">
+    <div class="grade">
+      <div class="cartao">
+        <div class="conteudo-cartao">
+          <div class="linha">
+            <img id="piFoto" class="avatar" src="" alt="foto"/>
+            <div>
+              <h2 id="piNome"></h2>
+              <div class="linha texto-pequeno texto-suave"><span id="piLocal"></span><span class="etiqueta">Categoria <span id="piCats"></span></span><span class="etiqueta">R$ <span id="piPreco"></span>/aula</span></div>
+              <div class="linha texto-pequeno"><span class="avaliacao" id="piRating"></span></div>
+            </div>
+          </div>
+          <p id="piBio" class="texto-suave" style="margin-top:8px"></p>
+          <div class="linha">
+            <a id="btnAgendar" class="btn primaria">Agendar Aula</a>
+            <a id="btnChat" class="btn">Enviar mensagem 💬</a>
+          </div>
+        </div>
+      </div>
+      <div class="cartao">
+        <div class="cabecalho-cartao">Avaliações</div>
+        <div class="conteudo-cartao" id="piAval"></div>
+      </div>
+    </div>
+  </template>
+
+  <template id="tpl-agendar">
+    <div class="cartao">
+      <div class="cabecalho-cartao">Agendar Aula</div>
+      <div class="conteudo-cartao">
+        <div class="linha"><span id="agNome" class="pilula"></span><span class="pilula">Preço R$ <span id="agPreco"></span></span></div>
+        <div class="espaco"></div>
+        <div class="linha"><button class="btn" id="mPrev">◀</button><div class="pilula" id="mLabel"></div><button class="btn" id="mNext">▶</button></div>
+        <div class="espaco"></div>
+        <div class="calendario" id="cal"></div>
+        <div class="espaco"></div>
+        <select id="selHora" class="seletor">
+          <option value="">Selecione o horário</option>
+          <option>09:00</option><option>11:00</option><option>13:00</option><option>15:00</option><option>17:00</option>
+        </select>
+        <div class="espaco"></div>
+        <button class="btn primaria" id="goPagamento">Agendar Aula</button>
+      </div>
+    </div>
+  </template>
+
+  <template id="tpl-pagamento">
+    <div class="grade grade-2">
+      <div class="cartao">
+        <div class="cabecalho-cartao">Pagamento</div>
+        <div class="conteudo-cartao">
+          <div class="linha"><span class="pilula">Instrutor: <b id="pgNome"></b></span><span class="pilula">Data: <b id="pgData"></b></span><span class="pilula">Hora: <b id="pgHora"></b></span></div>
+          <div class="espaco"></div>
+          <select id="pgMetodo" class="seletor">
+            <option value="pix">PIX</option>
+            <option value="cartao">Cartão</option>
+            <option value="boleto">Boleto</option>
+          </select>
+          <div class="espaco"></div>
+          <button class="btn sucesso" id="pgConfirmar">Confirmar e Agendar</button>
+        </div>
+      </div>
+      <div class="cartao">
+        <div class="cabecalho-cartao">Minhas Aulas</div>
+        <div class="conteudo-cartao" id="minhasAulas"></div>
+      </div>
+    </div>
+  </template>
+
+  <template id="tpl-chat">
+    <div class="cartao">
+      <div class="cabecalho-cartao">Chat</div>
+      <div class="conteudo-cartao">
+        <div id="chatMsgs" class="lista" style="max-height:50vh;overflow:auto"></div>
+        <div class="linha" style="margin-top:8px">
+          <input id="chatTexto" class="entrada" placeholder="Escreva uma mensagem"/>
+          <button id="chatEnviar" class="btn primaria">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="tpl-ead">
+    <div class="grade">
+      <div class="cartao"><div class="cabecalho-cartao">Cursos Teóricos Online</div><div class="conteudo-cartao" id="eadCursos"></div></div>
+      <div class="cartao"><div class="cabecalho-cartao">Certificados</div><div class="conteudo-cartao" id="eadCerts"></div></div>
+    </div>
+  </template>
+
+  <template id="tpl-simulados">
+    <div class="cartao"><div class="cabecalho-cartao">Simulados Detran</div>
+      <div class="conteudo-cartao">
+        <div id="quiz"></div>
+      </div>
+    </div>
+  </template>
+
+  <template id="tpl-docs">
+    <div class="grade-1">
+      <!-- Resumo Geral -->
+      <div class="cartao">
+        <div class="cabecalho-cartao">📊 Seu Progresso Geral</div>
+        <div class="conteudo-cartao">
+          <div id="dashResumo"></div>
+        </div>
+      </div>
+
+      <!-- Progresso por Categoria -->
+      <div class="cartao">
+        <div class="cabecalho-cartao">📈 Desempenho por Categoria</div>
+        <div class="conteudo-cartao">
+          <div id="dashCategorias"></div>
+        </div>
+      </div>
+
+      <!-- Histórico Recente -->
+      <div class="cartao">
+        <div class="cabecalho-cartao">📋 Últimos Simulados</div>
+        <div class="conteudo-cartao">
+          <div id="dashHistorico"></div>
+        </div>
+      </div>
+
+      <!-- Próximas Aulas -->
+      <div class="cartao">
+        <div class="cabecalho-cartao">📅 Próximas Aulas</div>
+        <div class="conteudo-cartao">
+          <div id="dashAulas"></div>
+        </div>
+      </div>
+
+      <!-- Recomendações -->
+      <div class="cartao">
+        <div class="cabecalho-cartao">💡 Recomendações</div>
+        <div class="conteudo-cartao">
+          <div id="dashRecomendacoes"></div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="tpl-minhas-aulas">
+    <div class="cartao">
+      <div class="cabecalho-cartao">Minhas Aulas Agendadas</div>
+      <div class="conteudo-cartao">
+        <div id="minhasAulas" class="lista"></div>
+      </div>
+    </div>
+  </template>
+
+  <template id="tpl-perfil">
+    <div class="grade grade-2">
+      <div class="cartao">
+        <div class="cabecalho-cartao">Meu Perfil</div>
+        <div class="conteudo-cartao">
+          <div class="linha">
+            <img id="perfilFoto" class="avatar" src="" alt="foto" style="width:100px;height:100px;border-radius:50%;object-fit:cover;"/>
+            <div>
+              <h2 id="perfilNome"></h2>
+              <p id="perfilEmail" class="texto-suave"></p>
+              <p id="perfilTipo" class="texto-suave"></p>
+            </div>
+          </div>
+          <div class="espaco"></div>
+          <a href="#/perfil-editar" class="btn primaria">✏️ Editar Perfil</a>
+        </div>
+      </div>
+      <div class="cartao">
+        <div class="cabecalho-cartao">Minhas Aulas Próximas</div>
+        <div class="conteudo-cartao">
+          <div id="proximo" class="lista"></div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="tpl-perfil-editar">
+    <div class="cartao" style="max-width:600px;margin:0 auto">
+      <div class="cabecalho-cartao">Editar Perfil</div>
+      <div class="conteudo-cartao">
+        <form id="formEditarPerfil" class="grade">
+          <div class="linha">
+            <img id="editFoto" class="avatar" src="" alt="foto" style="width:100px;height:100px;border-radius:50%;object-fit:cover;margin-bottom:10px"/>
+            <label class="pilula">📷 Foto <input type="file" name="foto" accept="image/*" /></label>
+          </div>
+          
+          <hr style="margin:15px 0;border:none;border-top:1px solid #ddd"/>
+          
+          <h3>Informações Básicas</h3>
+          <input class="entrada" name="nome_completo" placeholder="Nome completo" required />
+          <input class="entrada" name="email" type="email" placeholder="E-mail" required disabled />
+          <input class="entrada" name="cpf" placeholder="CPF" required disabled />
+          
+          <hr style="margin:15px 0;border:none;border-top:1px solid #ddd"/>
+          
+          <h3>Endereço</h3>
+          <input class="entrada" name="endereco" placeholder="Endereço" />
+          <input class="entrada" name="cidade" placeholder="Cidade" />
+          <input class="entrada" name="estado" placeholder="Estado (ex: MG)" />
+          
+          <hr style="margin:15px 0;border:none;border-top:1px solid #ddd"/>
+          
+          <div id="secaoAluno">
+            <h3>Informações de Aluno</h3>
+            <input class="entrada" name="data_nascimento" type="date" />
+            <select class="seletor" name="cnh_categoria_desejada">
+              <option value="">Categoria CNH desejada</option>
+              <option value="A">A - Motos</option>
+              <option value="B">B - Carros</option>
+              <option value="C">C - Caminhões</option>
+              <option value="D">D - Ônibus</option>
+              <option value="AB">AB - Carros e Motos</option>
+            </select>
+            <label><input type="checkbox" name="cnh_social" /> Inscrição CNH Social</label>
+          </div>
+          
+          <div id="secaoInstrutor" class="escondido">
+            <h3>Informações de Instrutor</h3>
+            <textarea class="area-texto" name="bio" rows="3" placeholder="Bio profissional"></textarea>
+            <input class="entrada" name="preco_aula" type="number" step="0.01" placeholder="Preço por aula (R$)" />
+            <input class="entrada" name="local" placeholder="Local de atuação (ex: Belo Horizonte, MG)" />
+          </div>
+          
+          <div class="espaco"></div>
+          <div class="linha">
+            <button class="btn primaria" type="submit">💾 Salvar Mudanças</button>
+            <a href="#/perfil" class="btn">Cancelar</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </template>
+
+  <template id="tpl-forum">
+    <div class="grade grade-2">
+      <div class="cartao"><div class="cabecalho-cartao">Tópicos</div><div class="conteudo-cartao"><div id="forumLista" class="lista"></div></div></div>
+      <div class="cartao"><div class="cabecalho-cartao">Novo tópico</div><div class="conteudo-cartao">
+        <input id="fTitulo" class="entrada" placeholder="Título"/>
+        <div class="espaco"></div>
+        <textarea id="fConteudo" class="area-texto" rows="5" placeholder="Escreva sua dúvida ou experiência"></textarea>
+        <div class="espaco"></div>
+        <button id="fPost" class="btn primaria">Publicar</button>
+      </div></div>
+    </div>
+  </template>
+
+    <div id="toast" class="toast escondido">ok</div>
+
+
+<script src="js/utilitarios.js"></script>
+<script src="js/dados.js"></script>
+<script src="js/autenticacao.js"></script>  
+<script src="js/cadastro-aluno.js"></script>
+<script src="js/calendario.js"></script>
+<script src="js/perfil.js"></script>
+<script src="js/chat.js"></script>
+<script src="js/forum.js"></script>
+<script src="js/questoes.js"></script>
+<script src="js/simulados.js"></script>
+<script src="js/docs.js"></script>
+<script src="js/api.js"></script>
+<script src="js/app.js"></script>
+<script src="js/rotas.js"></script>
+</body>
+</html>
