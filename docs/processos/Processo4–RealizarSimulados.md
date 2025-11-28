@@ -15,7 +15,6 @@ O aluno acessa o sistema através da URL. O aluno clica no botão “Entrar". O 
 | ---------------- | ------ | --------------------------- | ------------- |
 | Menu "Simulados" | Clique | Tela de escolha de simulado | default       |
 
-<img width="1141" height="810" alt="image" src="https://github.com/user-attachments/assets/6b02c11e-8ef4-4df1-aed7-acea631632c8" />
 
 ## Atividade 2 – Escolha do Tipo de Simulado
 
