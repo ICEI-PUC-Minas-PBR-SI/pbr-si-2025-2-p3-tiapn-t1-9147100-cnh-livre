@@ -2,8 +2,42 @@
 
 ## 5.1. Divisão de Papéis
 
+### Sprint 1
+- _Scrum master_: Eric Alixandre Gil
+- Protótipos: Lucas de Souza Sá, Rodrigo Goulart de Paula
+- Testes: FelipeAMGoncalves
+- Documentação: Lucas Gabriel de Castro e Joao Vitor Barros Cabral
 
-## Sprint 1
+### Sprint 2
+- _Scrum master_: Eric Alixandre Gil
+- Protótipos: Lucas de Souza Sá, Rodrigo Goulart de Paula
+- Testes: FelipeAMGoncalves
+- Documentação: Lucas Gabriel de Castro e Joao Vitor Barros Cabral
+
+### Sprint 3
+- _Scrum master_: Eric Alixandre Gil
+- Protótipos: Lucas de Souza Sá, Rodrigo Goulart de Paula
+- Testes: FelipeAMGoncalves
+- Documentação: Lucas Gabriel de Castro e Joao Vitor Barros Cabral
+
+### Sprint 4
+- _Scrum master_: Eric Alixandre Gil
+- Protótipos: Lucas de Souza Sá, Rodrigo Goulart de Paula
+- Testes: FelipeAMGoncalves
+- Documentação: Lucas Gabriel de Castro e Joao Vitor Barros Cabral
+
+
+### Sprint 5
+- _Scrum master_: Eric Alixandre Gil
+- Protótipos: Lucas de Souza Sá, Rodrigo Goulart de Paula
+- Testes: FelipeAMGoncalves
+- Documentação: Lucas Gabriel de Castro e Joao Vitor Barros Cabral
+
+### Sprint 6
+- _Scrum master_: Eric Alixandre Gil
+- Protótipos: Lucas de Souza Sá, Rodrigo Goulart de Paula
+- Testes: FelipeAMGoncalves
+- Documentação: Lucas Gabriel de Castro e Joao Vitor Barros Cabral
 
 Atualizado em: 28/11/2025
 
