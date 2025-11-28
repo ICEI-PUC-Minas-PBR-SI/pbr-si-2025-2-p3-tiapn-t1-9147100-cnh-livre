@@ -16,7 +16,6 @@ O processo é finalizado com a aula agendada.
 
 ## Detalhamento das Atividades
 ## Atividade 1 – Login no sistema
-<img width="945" height="670" alt="image" src="https://github.com/user-attachments/assets/a760e477-4583-4420-b0cb-01ecb61c9221" />
 
 
 | Campo | Tipo           | Restrições               | Valor default |
@@ -73,10 +72,10 @@ O processo é finalizado com a aula agendada.
 | Confirmar     | Aula agendada (fim)  | default |
 | Recusar       | Solicitação pendente | cancel  |
 <p float="left">
-  <img src="https://github.com/user-attachments/assets/a760e477-4583-4420-b0cb-01ecb61c9221" width="250" />
-  <img src="https://github.com/user-attachments/assets/8028a99a-3764-462d-acb4-6b71b95cc578" width="250" />
-  <img src="https://github.com/user-attachments/assets/42d85dda-b70c-4dbb-aa42-70fc1169cd05" width="250" />
-  <img src="https://github.com/user-attachments/assets/846f7da9-c98a-41cb-9819-c22f6e9d02fa" width="250" />
+  <img src="https://github.com/user-attachments/assets/a760e477-4583-4420-b0cb-01ecb61c9221" width="500" />
+  <img src="https://github.com/user-attachments/assets/8028a99a-3764-462d-acb4-6b71b95cc578" width="500" />
+  <img src="https://github.com/user-attachments/assets/42d85dda-b70c-4dbb-aa42-70fc1169cd05" width="500" />
+  <img src="https://github.com/user-attachments/assets/846f7da9-c98a-41cb-9819-c22f6e9d02fa" width="500" />
 </p>
 
 
