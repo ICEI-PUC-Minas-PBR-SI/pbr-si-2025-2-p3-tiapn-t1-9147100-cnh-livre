@@ -1,0 +1,29 @@
+cff-version: 1.0.1
+message: "Por favor cite este software usando os metadados abaixo."
+title: "CNH Livre — pbr-si-2025-2-p3-tiapn-t1-9147100-cnh-livre"
+authors:
+  - given-names: "Eric"
+    family-names: "Gil"
+  - given-names: "Lucas"
+    family-names: "Castro"
+   - given-names: "João"
+    family-names: "Barros"
+   - given-names: "Rodrigo"
+    family-names: "Goulart"
+   - given-names: "Lucas"
+    family-names: "Souza"
+  - given-names: "Felipe"
+    family-names: "Augusto"
+repository-code: "https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-2025-2-p3-tiapn-t1-9147100-cnh-livre"
+keywords:
+  - autoescola
+  - Simulados
+  - CNH
+  - sistema
+  - educacao
+  - full-stack
+  - mysql
+  - node.js
+license: "CC-BY-4.0"
+version: "1.0.0"
+date-released: "2025-11-28"
