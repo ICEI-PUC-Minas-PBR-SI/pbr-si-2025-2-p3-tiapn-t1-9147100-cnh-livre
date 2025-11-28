@@ -39,6 +39,8 @@
 - Testes: FelipeAMGoncalves
 - Documentação: Lucas Gabriel de Castro e Joao Vitor Barros Cabral
 
+## Sprint 1
+
 Atualizado em: 28/11/2025
 
 | Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
