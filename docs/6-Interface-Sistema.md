@@ -2,6 +2,7 @@
 # 6. Interface do Sistema
 
 ## 6.1. Tela principal do sistema
+O aluno acessa o sistema pela URL e visualiza a tela inicial da plataforma. Nessa página, ele pode escolher o perfil com o qual deseja entrar na aplicação. O aluno clica no botão "Sou Aluno" para iniciar sua jornada. Ao selecionar essa opção, o aluno é direcionado para o fluxo de criação de conta ou login.
 
 <img width="600" height="600" alt="image (1)" src="https://github.com/user-attachments/assets/97867b65-afb7-4c2a-9e5e-3fa68d75c2a9" />
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/cce5754d-a4bf-4ef5-877f-b4977394a15d" />
