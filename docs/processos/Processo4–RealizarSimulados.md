@@ -82,3 +82,6 @@ O aluno acessa o sistema através da URL. O aluno clica no botão “Entrar". O 
 | Status por Questão | Ícone | ✅❌⏭                | —             |
 | Resposta do Aluno  | Texto | Alternativa escolhida | —             |
 | Resposta Correta   | Texto | Alternativa certa     | —             |
+
+<img src="https://github.com/user-attachments/assets/6b02c11e-8ef4-4df1-aed7-acea631632c8" width="500" />
+
