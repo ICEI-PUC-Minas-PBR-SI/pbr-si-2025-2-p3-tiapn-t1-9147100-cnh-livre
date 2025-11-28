@@ -113,7 +113,8 @@ Documentos: Armazena documentos enviados pelos usuários para verificação.
 O DER representa todas essas entidades e seus relacionamentos, garantindo integridade referencial e suporte a todos os processos da aplicação.
 
 #### 4.3.2 Esquema Relacional
-![WhatsApp Image 2025-11-14 at 19 21 28](https://github.com/user-attachments/assets/3e779ffe-0351-44bd-b20b-52abca86b336)
+<img width="1470" height="1086" alt="DIAGRAMA BANCO DE DADOS CNH LIVRE (1)" src="https://github.com/user-attachments/assets/96027d02-3a75-454e-8eaa-2023b89ed317" />
+
 
 A seguir, o modelo relacional com as principais tabelas e seus atributos:
 
