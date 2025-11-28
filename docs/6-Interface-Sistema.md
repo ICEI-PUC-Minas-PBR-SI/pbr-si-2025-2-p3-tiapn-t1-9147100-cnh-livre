@@ -3,8 +3,8 @@
 
 ## 6.1. Tela principal do sistema
 
-<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/cce5754d-a4bf-4ef5-877f-b4977394a15d" />
 <img width="600" height="600" alt="image (1)" src="https://github.com/user-attachments/assets/97867b65-afb7-4c2a-9e5e-3fa68d75c2a9" />
+<img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/cce5754d-a4bf-4ef5-877f-b4977394a15d" />
 
 
 
