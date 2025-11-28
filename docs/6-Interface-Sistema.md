@@ -8,6 +8,10 @@
 
 
 ## 6.2. Telas do processo 1
+O aluno acessa o sistema, preenche informações básicas e já pode começar a usar a plataforma para buscar instrutores e agendar aulas.
+
+O aluno acessa o sistema através da URL. O aluno clica no botão "Sou Aluno". O aluno preenche o formulário de cadastro com informações pessoais. O sistema valida os dados informados. Caso todos os campos estejam corretos, a conta é criada. O aluno é redirecionado para a área logada
+
 
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/b1d01ac2-a62d-43ef-b5c2-df0eeeba2e84" />
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/9873a8e8-bd98-4b24-95e7-965d407c85e9" />
