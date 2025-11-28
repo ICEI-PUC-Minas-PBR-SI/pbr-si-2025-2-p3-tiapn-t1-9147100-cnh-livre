@@ -6,10 +6,10 @@
 
 `Semestre: 2 2025`
 
-O presente relatório tem como objetivo apresentar o CNH Livre, um sistema digital inovador
-voltado à modernização do processo de formação de condutores no Brasil. A plataforma foi
-desenvolvida com a finalidade de conectar, de forma direta, alunos e instrutores de trânsito,
-promovendo praticidade, economia e acessibilidade no processo de obtenção da Carteira
+O  relatório tem como objetivo apresentar o CNH Livre, um sistema  inovador
+voltado ao  processo de formação de condutores no Brasil. A plataforma foi
+desenvolvida com a finalidade de conectar de forma direta, alunos e instrutores de trânsito,
+com praticidade, economia e acessibilidade no processo de obtenção da Carteira
 Nacional de Habilitação
 
 ## Integrantes
