@@ -4,16 +4,28 @@ title: "CNH Livre — pbr-si-2025-2-p3-tiapn-t1-9147100-cnh-livre"
 authors:
   - given-names: "Eric"
     family-names: "Gil"
+    affiliation:
+      - name: "PUC Minas"
   - given-names: "Lucas"
     family-names: "Castro"
-   - given-names: "João"
+    affiliation:
+      - name: "PUC Minas"
+  - given-names: "João"
     family-names: "Barros"
-   - given-names: "Rodrigo"
+    affiliation:
+      - name: "PUC Minas"
+  - given-names: "Rodrigo"
     family-names: "Goulart"
-   - given-names: "Lucas"
+    affiliation:
+      - name: "PUC Minas"
+  - given-names: "Lucas"
     family-names: "Souza"
+    affiliation:
+      - name: "PUC Minas"
   - given-names: "Felipe"
     family-names: "Augusto"
+    affiliation:
+      - name: "PUC Minas"
 repository-code: "https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-2025-2-p3-tiapn-t1-9147100-cnh-livre"
 keywords:
   - autoescola
@@ -27,3 +39,6 @@ keywords:
 license: "CC-BY-4.0"
 version: "1.0.0"
 date-released: "2025-11-28"
+institution: "PUC Minas"
+course: "Trabalho Interdisciplinar"
+supervisor: "Cleia Marcia Gomes Amaral"
