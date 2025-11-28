@@ -1,4 +1,4 @@
 # Código-fonte do projeto
 
 
-<li><a href="app"> App </a></li> 
+<li><a href="aplicativo"> App </a></li> 
