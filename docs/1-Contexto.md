@@ -1,7 +1,7 @@
 
 ## Introdução
 
-O presente projeto tem como objetivo analisar e apresentar soluções para a modernização do processo de formação de condutores no Brasil. O contexto envolve uma realidade em que o acesso à habilitação ainda é burocrático, caro e pouco acessível para grande parte da população. Muitos candidatos enfrentam dificuldades para encontrar instrutores confiáveis, organizar seus horários e compreender os processos legais e financeiros envolvidos.
+O  projeto tem como objetivo apresentar soluções para a modernização do processo de formação de condutores no Brasil. O contexto envolve uma realidade em que o acesso à habilitação ainda é caro e pouco acessível para grande parte da população. Muitos candidatos enfrentam dificuldades para encontrar instrutores confiáveis, organizar seus horários e compreender os processos legais e financeiros envolvidos.
 
 O projeto busca, portanto, estudar e propor meios digitais que promovam maior praticidade, transparência e inclusão nesse processo, considerando a crescente digitalização de serviços em setores como educação, transporte e serviços financeiros.
 
