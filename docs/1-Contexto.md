@@ -1,13 +1,13 @@
 
 ## Introdução
 
-O  projeto tem como objetivo apresentar soluções para a modernização do processo de formação de condutores no Brasil. O contexto envolve uma realidade em que o acesso à habilitação ainda é caro e pouco acessível para grande parte da população. Muitos candidatos enfrentam dificuldades para encontrar instrutores confiáveis, organizar seus horários e compreender os processos legais e financeiros envolvidos.
+O projeto tem como objetivo apresentar soluções e inovação para a modernização do processo de formação de condutores. O trabalho envolve uma realidade em que o acesso à habilitação ainda tem um custo alto e pouco acessível para grande parte da população. Muitas pessoas enfrentam dificuldades para encontrar instrutores bons e confiáveis, organizar seus horários e compreender os processos legais e financeiros.
 
-O projeto busca, portanto, estudar e propor meios digitais que promovam maior praticidade, transparência e inclusão nesse processo, considerando a crescente digitalização de serviços em setores como educação, transporte e serviços financeiros.
+O projeto busca, portanto, estudar e propor meios digitais que promovam maior praticidade, transparência e participação nesse processo, considerando a crescente mordenização de serviços em setores como educação, transporte e financeiros.
 
 ## Problema
 
-O problema central identificado é a falta de transparência, organização e acessibilidade no processo de formação de condutores.
+O maior problema visto foi a falta de transparência, organização e acessibilidade no processo de formação de condutores.
 
 Alunos enfrentam dificuldades como:
 
@@ -32,22 +32,23 @@ Investigar e propor soluções digitais que simplifiquem e tornem mais eficiente
 
 ## Objetivos Específicos
 
-Analisar o processo atual de formação de condutores e identificar gargalos e dificuldades enfrentadas pelos alunos;
+Examinar o processo atual de formação de motoristas e identificar os obstáculos e desafios enfrentados pelos estudantes;
 
-Pesquisar práticas digitais aplicadas a setores similares, como educação e mobilidade, para compreender soluções possíveis;
+Investigar práticas digitais implementadas em setores semelhantes, como educação e mobilidade, a fim de entender soluções viáveis;
 
-Mapear os perfis dos usuários envolvidos, entendendo suas necessidades, limitações e expectativas;
+Identificar os perfis dos usuários envolvidos, compreendendo suas demandas, restrições e expectativas;
 
-Propor indicadores que possam medir a melhoria de eficiência e acessibilidade no processo de formação de condutores.
+Sugerir indicadores que possam avaliar o aumento da eficiência e da acessibilidade no processo de formação de motoristas
 
 ## Justificativa
 
-A escolha deste tema é motivada pela necessidade de tornar o processo de habilitação mais acessível e eficiente, reduzindo entraves burocráticos e promovendo inclusão social. Além disso, o estudo deste problema oferece oportunidade de gerar insights relevantes sobre como a tecnologia pode otimizar processos educacionais e administrativos.
+A escolha deste tema é impulsionada pela necessidade de tornar o processo de habilitação mais simples e eficaz, diminuindo obstáculos burocráticos e fomentando a inclusão social. Ademais, a análise deste problema possibilita a geração de insights significativos sobre como a tecnologia pode aprimorar os processos educacionais e administrativos.
 
-O projeto também busca compreender como mudanças legais e sociais impactam a formação de condutores, de modo a oferecer soluções que sejam pertinentes, viáveis e alinhadas às demandas atuais. Questionários, entrevistas e dados estatísticos podem subsidiar a análise e fortalecer a relevância da proposta.
+Além disso, o projeto visa entender como as mudanças sociais e legais afetam a formação de motoristas, a fim de fornecer soluções que sejam relevantes, viáveis e alinhadas às necessidades atuais. A análise pode ser apoiada e a importância da proposta reforçada por meio de questionários, entrevistas e dados estatísticos.
+
 ## Público-Alvo
 
-O público-alvo deste projeto compreende:
+O público-alvo deste projeto:
 
 Alunos/candidatos à CNH: pessoas de diferentes faixas etárias, com variados níveis de conhecimento tecnológico e necessidade de flexibilidade no agendamento de aulas;
 
