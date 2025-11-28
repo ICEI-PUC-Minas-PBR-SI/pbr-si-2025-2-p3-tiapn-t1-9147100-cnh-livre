@@ -16,9 +16,14 @@ authors:
     family-names: "Augusto"
 repository-code: "https://github.com/ICEI-PUC-Minas-PBR-SI/pbr-si-2025-2-p3-tiapn-t1-9147100-cnh-livre"
 keywords:
-  - "CNH"
-  - "sistema"
-  - "educacao"
+  - autoescola
+  - Simulados
+  - CNH
+  - sistema
+  - educacao
+  - full-stack
+  - mysql
+  - node.js
 license: "CC-BY-4.0"
 version: "1.0.0"
 date-released: "2025-11-28"
