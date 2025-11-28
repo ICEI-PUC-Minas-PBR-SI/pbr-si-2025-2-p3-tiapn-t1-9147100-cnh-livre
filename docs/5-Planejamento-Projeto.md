@@ -47,6 +47,32 @@ Atualizado em: 28/11/2025
 |  Rodrigo Goulart de Paula  | Detalhar campos e comandos do Processo 2       | 01/10/2025     | 10/10/2025 | ✔️    | 03/10/2025 |
 | Eric Alixandre Gil   | Implementar front-end completo do Processo 2       | 01/10/2025     | 10/10/2025 | ✔️    | 03/10/2025 |
 
+## Sprint 4
+
+Atualizado em: 28/11/2025
+| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
+|  FelipeAMGoncalves      | Atualizar relatório (Processo 1 e Modelo de Dados)        | 03/10/2025     | 24/10/2025 | ✔️    | 03/10/2025 |
+|   Eric Alixandre Gil e Rodrigo Goulart de Paula     | Iniciar implementação do Processo 1 (Front end)        | 03/10/2025     | 24/10/2025 | ✔️    | 03/10/2025 |
+|   Joao Vitor Barros Cabral, Lucas de Souza Sá  e Rodrigo Goulart de Paula     | Implementar Processo 2        | 03/10/2025     | 24/10/2025 | ✔️    | 03/10/2025 |
+|   FelipeAMGoncalves, Lucas de Souza Sá      | Planejar Sprint 5 (divisão de tarefas)        | 03/10/2025     | 24/10/2025 | ✔️    | 03/10/2025 |
+|   FelipeAMGoncalves, Eric Alixandre Gil      | Implementar Processo 3        | 03/10/2025     | 24/10/2025 | ✔️    | 03/10/2025 |
+|    Lucas Gabriel de Castro    | Atualização do relatório (Processo 1 e Modelo de Dados)        | 03/10/2025     | 24/10/2025 | ✔️    | 03/10/2025 |
+|    Lucas Gabriel de Castro  e Eric Alixandre Gi  | Desenvolvimento do front do Processo 1        | 03/10/2025     | 24/10/2025 | ✔️    | 03/10/2025 |
+
+## Sprint 5
+
+Atualizado em: 28/11/2025
+| Responsável   | Tarefa/Requisito | Iniciado em    | Prazo      | Status | Terminado em    |
+| :----         |    :----         |      :----:    | :----:     | :----: | :----:          |
+|  Lucas Gabriel de Castro, Eric Alixandre Gi  e Rodrigo Goulart de Paula    | implementação do processo 2        | 10/10/2025     | 07/11/2025 | ✔️    | 24/10/2025 |
+|  Lucas Gabriel de Castro, Eric Alixandre Gi  e Rodrigo Goulart de Paula    | Criar a interface       | 10/10/2025     | 07/11/2025 | ✔️    | 24/10/2025 |
+|  FelipeAMGoncalves, Lucas de Souza Sá e Joao Vitor Barros Cabral   | Atualizar modelagem BPMN       | 10/10/2025     | 07/11/2025 | ✔️    | 24/10/2025 |
+|  Lucas Gabriel de Castro, Eric Alixandre Gi  e Rodrigo Goulart de Paula   | Criar no banco as tabelas       | 10/10/2025     | 07/11/2025 | ✔️    | 24/10/2025 |
+
+
+
+
 Legenda:
 - ✔️: terminado
 - 📝: em execução
