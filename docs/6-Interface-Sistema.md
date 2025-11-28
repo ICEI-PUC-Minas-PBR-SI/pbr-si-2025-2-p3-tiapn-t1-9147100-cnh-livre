@@ -34,6 +34,8 @@ O aluno acessa o sistema e faz login. O aluno seleciona a opção “Solicitar I
 
 
 ## 6.5. Telas do processo 4
+O aluno acessa o sistema através da URL. O aluno clica no botão “Entrar". O aluno preenche os com informações pessoais para realizar o login. O sistema valida os dados informados. Caso todos os campos estejam corretos, o aluno é redirecionado para a área logada. Aluno logado acessa a seção "Simulados". O aluno Escolhe o tipo de simulado desejado. O aluno responde as questões uma por uma. O aluno recebe feedback imediato após cada questão. Ao final,o aluno visualiza o resultado completo.
+
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/8f8d2485-4999-4e39-89d2-e304bb9d734b" />
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/36015e30-023c-4354-8d33-e59d4250851c" />
 
