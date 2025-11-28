@@ -19,7 +19,8 @@ O aluno acessa o sistema através da URL. O aluno clica no botão "Sou Aluno". O
 
 ## 6.3. Telas do processo 2
 O processo de cadastro do instrutor é mais completo que o do aluno, pois requer documentação profissional comprobatória e informações específicas sobre a atividade de ensino.
-O instrutor acessa o sistema através da URL. O instrutor Clica no botão "Sou Instrutor". O instrutor Preenche o formulário de cadastro com informações pessoais e profissionais. O instrutor Faz upload dos documentos necessários. O sistema valida os dados informados.Caso todos os campos estejam corretos, a conta é criada (pendente de verificação). O instrutor é redirecionado para a área de cadastro em análise
+O instrutor acessa o sistema através da URL. O instrutor Clica no botão "Sou Instrutor". O instrutor Preenche o formulário de cadastro com informações pessoais e profissionais. O instrutor Faz upload dos documentos necessários. O sistema valida os dados informados.Caso todos os campos estejam corretos, a conta é criada (pendente de verificação). O instrutor é redirecionado para a área de cadastro em análise. 
+
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/87c7118c-b911-4dee-9abc-5c3cddff9f86" />
 
 
