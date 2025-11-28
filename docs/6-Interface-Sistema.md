@@ -40,6 +40,7 @@ O aluno acessa o sistema através da URL. O aluno clica no botão “Entrar". O 
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/36015e30-023c-4354-8d33-e59d4250851c" />
 
 ## 6.6. Telas do processo 5
+O aluno acessa o sistema e faz login. O aluno seleciona a opção “Acompanhar Progresso”. O sistema apresenta os dados de aulas, simulados e exames. O aluno pode exportar as informações em relatório ou apenas visualizar. O processo finaliza com a visualização ou exportação do progresso.
 
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/7e80a673-9b01-4869-9b1c-e22c087bff1f" />
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/b390cb12-4986-4cdd-8361-de4510a886d5" />
