@@ -25,6 +25,8 @@ O instrutor acessa o sistema através da URL. O instrutor Clica no botão "Sou I
 
 
 ## 6.4. Telas do processo 3
+O aluno acessa o sistema e faz login. O aluno seleciona a opção “Solicitar Instrutor”. O sistema apresenta a lista de instrutores disponíveis com horários, categorias e valores. O aluno escolhe um instrutor e solicita a aula. O instrutor recebe a notificação e confirma ou recusa a solicitação. Caso aceite, o agendamento é registrado e o aluno recebe a confirmação. O processo é finalizado com a aula agendada.
+
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/261b6a90-1828-4b0c-be52-c888c0cf7d63" />
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/25b10c63-3cce-43cf-94f5-6f3b6ffcbb54" />
 <img width="600" height="600" alt="image" src="https://github.com/user-attachments/assets/9805c4dc-bbad-4ae6-bed4-21f7206c06a6" />
